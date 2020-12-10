@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nUI-vH-iuR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6K4-gK-P5f">
+            <objects>
+                <viewController id="nUI-vH-iuR" customClass="ViewController" customModule="ScreenCaptureExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jZa-ok-OUC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Callee's ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-hP-YFw">
+                                <rect key="frame" x="105" y="276" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAS-Ar-AQP">
+                                <rect key="frame" x="237" y="276" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dial"/>
+                                <connections>
+                                    <action selector="didTapDialButton:" destination="nUI-vH-iuR" eventType="touchUpInside" id="zGF-yG-thd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQa-oH-WW2">
+                                <rect key="frame" x="105" y="197" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kx-At-js4">
+                                <rect key="frame" x="220" y="199" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SIgn In"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SendBirdCalls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtC-a8-67X">
+                                <rect key="frame" x="145.5" y="114" width="123" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9hR-Vy-bok"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XtC-a8-67X" firstAttribute="top" secondItem="9hR-Vy-bok" secondAttribute="top" constant="70" id="I7D-IA-oAh"/>
+                            <constraint firstItem="XtC-a8-67X" firstAttribute="centerX" secondItem="9hR-Vy-bok" secondAttribute="centerX" id="pbQ-d4-87Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authenticateButton" destination="5kx-At-js4" id="OKG-1v-rMd"/>
+                        <outlet property="calleeIdTextField" destination="nf9-hP-YFw" id="sl3-MI-vc3"/>
+                        <outlet property="userIdTextField" destination="NQa-oH-WW2" id="qYh-sh-Nmz"/>
+                        <segue destination="GPs-IZ-NQi" kind="presentation" identifier="dial" id="ja6-f0-jn4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmC-yh-nRE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18554" y="155"/>
+        </scene>
+        <!--Calling View Controller-->
+        <scene sceneID="esU-DC-pkw">
+            <objects>
+                <viewController id="GPs-IZ-NQi" customClass="CallingViewController" customModule="ScreenCaptureExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1BJ-Sv-nLN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-1O-rhj">
+                                <rect key="frame" x="253" y="16" width="145" height="217.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bsb-1O-rhj" secondAttribute="height" multiplier="720:1080" id="1r9-YE-mrF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fA-bF-LsQ">
+                                <rect key="frame" x="66" y="640" width="107" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45230805870000002" green="0.31918981670000002" blue="0.91377454999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Capture Local">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCaptureLocalButton:" destination="GPs-IZ-NQi" eventType="touchUpInside" id="kPl-U1-qhf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB6-3V-gDB">
+                                <rect key="frame" x="229" y="640" width="127" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45230805870000002" green="0.31918981670000002" blue="0.91377454999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Capture Remote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCaptureRemoteButton:" destination="GPs-IZ-NQi" eventType="touchUpInside" id="7xd-hT-KfF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hA-ZS-N4n">
+                                <rect key="frame" x="180" y="714" width="54" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" backgroundImage="phone.down.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="didTapEndCallButton:" destination="GPs-IZ-NQi" eventType="touchUpInside" id="T6M-HK-7py"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dCV-I7-eDy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dCV-I7-eDy" firstAttribute="trailing" secondItem="bsb-1O-rhj" secondAttribute="trailing" constant="16" id="63J-Ia-fml"/>
+                            <constraint firstItem="bsb-1O-rhj" firstAttribute="width" secondItem="1BJ-Sv-nLN" secondAttribute="width" multiplier="0.35" id="CGj-Lz-ZXn"/>
+                            <constraint firstItem="bsb-1O-rhj" firstAttribute="top" secondItem="dCV-I7-eDy" secondAttribute="top" constant="16" id="qvW-yA-JaI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="localVideoView" destination="bsb-1O-rhj" id="AgW-sv-q9J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQ6-Ri-97b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17814" y="155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="phone.down.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
