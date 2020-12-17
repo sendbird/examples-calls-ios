@@ -5,12 +5,6 @@
       location = "group:Commons">
    </FileRef>
    <FileRef
-      location = "group:ScreenRecordExample/ScreenRecordExample.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ScreenCaptureExample/ScreenCaptureExample.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
