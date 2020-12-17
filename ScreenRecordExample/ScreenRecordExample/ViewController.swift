@@ -59,10 +59,10 @@ class ViewController: UIViewController {
                 return
             }
             
-            self.authenticateButton.addTarget(self, action: #selector(self.deauthenticate), for: .touchUpInside)
-            self.authenticateButton.removeTarget(self, action: #selector(self.authenticate), for: .touchUpInside)
             self.authenticateButton.setTitle("Sign Out", for: .normal)
             self.userIdTextField.isHidden = true
+            self.authenticateButton.removeTarget(self, action: #selector(self.authenticate), for: .touchUpInside)
+            self.authenticateButton.addTarget(self, action: #selector(self.deauthenticate), for: .touchUpInside)
             print("Successfully authenticated with userId: \(user.userId)")
         }
     }
@@ -72,10 +72,10 @@ class ViewController: UIViewController {
         SendBirdCall.deauthenticate { (error) in
             guard error == nil else { return }
             
-            self.authenticateButton.removeTarget(self, action: #selector(self.deauthenticate), for: .touchUpInside)
-            self.authenticateButton.addTarget(self, action: #selector(self.authenticate), for: .touchUpInside)
             self.authenticateButton.setTitle("Sign In", for: .normal)
             self.userIdTextField.isHidden = false
+            self.authenticateButton.removeTarget(self, action: #selector(self.deauthenticate), for: .touchUpInside)
+            self.authenticateButton.addTarget(self, action: #selector(self.authenticate), for: .touchUpInside)
             print("Successfully deauthenticated from SendBirdCalls")
         }
     }

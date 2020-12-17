@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,49 +16,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Callee's ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I1O-wb-VEj">
-                                <rect key="frame" x="105" y="276" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Callee's ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I1O-wb-VEj">
+                                <rect key="frame" x="139" y="287" width="68" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9G-D4-Pes">
-                                <rect key="frame" x="237" y="276" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9G-D4-Pes">
+                                <rect key="frame" x="239.5" y="280.5" width="30" height="30"/>
                                 <state key="normal" title="Dial"/>
                                 <connections>
                                     <action selector="didTapDialButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8R-6R-yWS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aq4-yQ-ivW">
-                                <rect key="frame" x="105" y="197" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aq4-yQ-ivW">
+                                <rect key="frame" x="159" y="246" width="48" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvE-ef-w7T">
-                                <rect key="frame" x="220" y="199" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvE-ef-w7T">
+                                <rect key="frame" x="231" y="239.5" width="47" height="30"/>
                                 <state key="normal" title="SIgn In"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SendBirdCalls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOj-3i-p2t">
-                                <rect key="frame" x="154" y="114" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SendBird Calls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOj-3i-p2t">
+                                <rect key="frame" x="127" y="168" width="160" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCi-82-oyS">
-                                <rect key="frame" x="155" y="414" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogoSymbol" translatesAutoresizingMaskIntoConstraints="NO" id="j3w-lE-exy">
+                                <rect key="frame" x="183" y="96" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Eoq-Ye-NMy"/>
+                                    <constraint firstAttribute="width" constant="48" id="QiA-TS-iWX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCi-82-oyS">
+                                <rect key="frame" x="154.5" y="582" width="105" height="30"/>
                                 <state key="normal" title="Recording Files"/>
                                 <connections>
                                     <segue destination="Ipw-ce-Dh2" kind="show" id="9iv-CF-aby"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UvE-ef-w7T" firstAttribute="centerY" secondItem="aq4-yQ-ivW" secondAttribute="centerY" id="1hi-i6-0G1"/>
+                            <constraint firstItem="sCi-82-oyS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3dJ-04-H88"/>
+                            <constraint firstItem="aq4-yQ-ivW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CuN-8T-FOm"/>
+                            <constraint firstItem="rOj-3i-p2t" firstAttribute="centerX" secondItem="j3w-lE-exy" secondAttribute="centerX" id="GaV-VY-m5C"/>
+                            <constraint firstItem="j3w-lE-exy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="96" id="KAg-3f-BrD"/>
+                            <constraint firstItem="UvE-ef-w7T" firstAttribute="leading" secondItem="aq4-yQ-ivW" secondAttribute="trailing" constant="24" id="OR8-V4-bhY"/>
+                            <constraint firstItem="E9G-D4-Pes" firstAttribute="centerX" secondItem="UvE-ef-w7T" secondAttribute="centerX" id="PIa-LY-aHY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sCi-82-oyS" secondAttribute="bottom" constant="250" id="SQN-ai-9NT"/>
+                            <constraint firstItem="aq4-yQ-ivW" firstAttribute="top" secondItem="rOj-3i-p2t" secondAttribute="bottom" constant="49" id="Tf6-QV-g8I"/>
+                            <constraint firstItem="I1O-wb-VEj" firstAttribute="top" secondItem="aq4-yQ-ivW" secondAttribute="bottom" constant="24" id="cZs-fh-5Dh"/>
+                            <constraint firstItem="E9G-D4-Pes" firstAttribute="centerY" secondItem="I1O-wb-VEj" secondAttribute="centerY" id="l9U-jF-Yms"/>
+                            <constraint firstItem="j3w-lE-exy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="t2C-Da-djQ"/>
+                            <constraint firstItem="rOj-3i-p2t" firstAttribute="top" secondItem="j3w-lE-exy" secondAttribute="bottom" constant="24" id="wF1-7J-G9K"/>
+                            <constraint firstItem="I1O-wb-VEj" firstAttribute="trailing" secondItem="aq4-yQ-ivW" secondAttribute="trailing" id="x1I-sL-FeT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="authenticateButton" destination="UvE-ef-w7T" id="7Lh-xk-fMO"/>
@@ -70,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18554" y="155"/>
+            <point key="canvasLocation" x="-18555.072463768116" y="154.6875"/>
         </scene>
         <!--Calling View Controller-->
         <scene sceneID="W99-7p-S5B">
@@ -88,7 +104,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="893-ux-C6P">
                                                 <rect key="frame" x="6.5" y="6.5" width="12.5" height="12.5"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <real key="value" value="6.25"/>
@@ -96,7 +112,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="893-ux-C6P" firstAttribute="height" secondItem="wqh-5l-UO3" secondAttribute="height" multiplier="0.5" id="Fgm-6q-sw0"/>
                                             <constraint firstItem="893-ux-C6P" firstAttribute="centerX" secondItem="wqh-5l-UO3" secondAttribute="centerX" id="MIw-Fu-pl3"/>
@@ -112,7 +128,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="wqh-5l-UO3" firstAttribute="top" secondItem="TcC-pE-7vX" secondAttribute="top" constant="8" id="5Um-Zn-6n9"/>
                                     <constraint firstAttribute="width" secondItem="TcC-pE-7vX" secondAttribute="height" multiplier="720:1080" id="Cx9-FG-r8a"/>
@@ -124,9 +140,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cda-w7-A7j">
-                                <rect key="frame" x="144" y="641" width="127" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cda-w7-A7j">
+                                <rect key="frame" x="153" y="654" width="108" height="30"/>
                                 <color key="backgroundColor" red="0.45230805870000002" green="0.31918981670000002" blue="0.91377454999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <state key="normal" title="Start Recording">
@@ -141,7 +156,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mi-SC-lzq">
                                         <rect key="frame" x="6.5" y="6.5" width="12.5" height="12.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <real key="value" value="6.25"/>
@@ -149,7 +164,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="4mi-SC-lzq" firstAttribute="centerY" secondItem="IBg-aV-1KD" secondAttribute="centerY" id="Ctm-fo-S6j"/>
                                     <constraint firstItem="4mi-SC-lzq" firstAttribute="height" secondItem="IBg-aV-1KD" secondAttribute="height" multiplier="0.5" id="K9C-3n-nre"/>
@@ -164,26 +179,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p8-Ca-hcV">
-                                <rect key="frame" x="180" y="713.5" width="54" height="57"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="phone.down.circle" catalog="system"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p8-Ca-hcV">
+                                <rect key="frame" x="175" y="708" width="64" height="64"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="btnCallEnd"/>
                                 <connections>
                                     <action selector="didTapEndCallButton:" destination="fit-cq-kum" eventType="touchUpInside" id="Ibh-t5-uiH"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="v03-P5-61L"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="IBg-aV-1KD" firstAttribute="top" secondItem="v03-P5-61L" secondAttribute="top" constant="16" id="5nN-ai-eFv"/>
                             <constraint firstItem="IBg-aV-1KD" firstAttribute="leading" secondItem="v03-P5-61L" secondAttribute="leading" constant="16" id="Amx-KD-jsT"/>
                             <constraint firstItem="TcC-pE-7vX" firstAttribute="top" secondItem="v03-P5-61L" secondAttribute="top" constant="16" id="MeE-LY-xSj"/>
+                            <constraint firstItem="Cda-w7-A7j" firstAttribute="centerX" secondItem="7p8-Ca-hcV" secondAttribute="centerX" id="PUF-gE-9yv"/>
                             <constraint firstItem="7p8-Ca-hcV" firstAttribute="centerX" secondItem="v03-P5-61L" secondAttribute="centerX" id="WAD-Hs-t46"/>
                             <constraint firstItem="v03-P5-61L" firstAttribute="trailing" secondItem="TcC-pE-7vX" secondAttribute="trailing" constant="16" id="Xgk-bR-zch"/>
-                            <constraint firstItem="v03-P5-61L" firstAttribute="bottom" secondItem="7p8-Ca-hcV" secondAttribute="bottom" constant="36.5" id="t2q-nQ-bNo"/>
+                            <constraint firstItem="7p8-Ca-hcV" firstAttribute="top" secondItem="Cda-w7-A7j" secondAttribute="bottom" constant="24" id="rpn-Ck-IKI"/>
+                            <constraint firstItem="v03-P5-61L" firstAttribute="bottom" secondItem="7p8-Ca-hcV" secondAttribute="bottom" constant="36" id="t2q-nQ-bNo"/>
                             <constraint firstItem="TcC-pE-7vX" firstAttribute="width" secondItem="Yjz-3u-Sex" secondAttribute="width" multiplier="0.35" id="zim-6y-ugl"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="v03-P5-61L"/>
                     </view>
                     <connections>
                         <outlet property="localVideoView" destination="TcC-pE-7vX" id="qlw-Ao-vXQ"/>
@@ -203,7 +220,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uhC-PL-YUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCell" rowHeight="64" id="aR0-bT-0xN">
                                 <rect key="frame" x="0.0" y="28" width="414" height="64"/>
@@ -227,12 +244,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="phone.down.circle" catalog="system" width="128" height="121"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="btnCallEnd" width="64" height="64"/>
+        <image name="icLogoSymbol" width="48" height="48"/>
     </resources>
 </document>
