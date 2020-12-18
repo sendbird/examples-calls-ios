@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Enable camera access so that others can see you during video calls.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Enable microphone access so that others can hear you.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Enable access to photo library so that you can save images to the photo library.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -43,11 +49,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Enable microphone access so that others can hear you.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Enable camera access so that others can see you during video calls.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Enable access to photo library so that you can save images to the photo library.</string>
 </dict>
 </plist>

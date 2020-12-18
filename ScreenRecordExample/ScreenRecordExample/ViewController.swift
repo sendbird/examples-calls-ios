@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
-            self.performSegue(withIdentifier: "dial", sender: call)
+                self.performSegue(withIdentifier: "dial", sender: call)
             }
         }
     }

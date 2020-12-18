@@ -63,11 +63,11 @@ class CallingViewController: UIViewController {
     }
     
     func startRecording(with recordingType: RecordingOptions.RecordingType) {
-        guard let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("SendBird").appendingPathComponent("Recording") else { return }
+        guard let url = FileManager.recordingsDirectory else { return }
         
         let recordingOptions = RecordingOptions(recordingType: recordingType, directoryPath: url)
         call.startRecording(options: recordingOptions) { recordingId, error in
-            print("Started recording with recordingId: \(recordingId) and error: \(error)")
+            print("Started recording with recordingId: \(String(describing: recordingId)) and error: \(String(describing: error))")
             
             self.recordingId = recordingId
             self.recordingIndicatorView.isHidden = false
