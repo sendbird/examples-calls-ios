@@ -7,7 +7,6 @@
 
 import UIKit
 import SendBirdCalls
-import UserNotifications
 import Commons
 
 @UIApplicationMain
@@ -19,21 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SendBirdCall.configure(appId: appId)
         SendBirdCall.addDelegate(self, identifier: "AppDelegate")
         
-        application.registerForRemoteNotifications()
-        
         return true
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        UserDefaults.standard.setValue(deviceToken, forKey: "PushToken")
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        SendBirdCall.application(application, didReceiveRemoteNotification: userInfo)
-        completionHandler(.newData)
     }
 }
 
+// Process incoming calls
 extension AppDelegate: SendBirdCallDelegate {
     func didStartRinging(_ call: DirectCall) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)

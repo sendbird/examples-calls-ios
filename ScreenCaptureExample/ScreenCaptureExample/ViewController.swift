@@ -59,9 +59,6 @@ class ViewController: UIViewController {
                 return
             }
             
-            let pushToken = UserDefaults.standard.value(forKey: "PushToken") as? Data
-            SendBirdCall.registerRemotePush(token: pushToken, completionHandler: nil)
-            
             self.userIdTextField.isHidden = true
             self.authenticateButton.setTitle("Sign Out", for: .normal)
             self.authenticateButton.removeTarget(self, action: #selector(self.authenticate), for: .touchUpInside)
@@ -72,9 +69,6 @@ class ViewController: UIViewController {
     
     @objc
     func deauthenticate() {
-        let pushToken = UserDefaults.standard.value(forKey: "PushToken") as? Data
-        SendBirdCall.unregisterRemotePush(token: pushToken, completionHandler: nil)
-        
         SendBirdCall.deauthenticate { (error) in
             guard error == nil else { return }
             
