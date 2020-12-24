@@ -15,8 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let appId: String = <#Application ID From Sendbird Dashboard#>
+        
         SendBirdCall.configure(appId: appId)
         SendBirdCall.addDelegate(self, identifier: "AppDelegate")
+        SendBirdCall.executeOn(queue: DispatchQueue.main)
         
         return true
     }
@@ -27,27 +29,36 @@ extension AppDelegate: SendBirdCallDelegate {
     func didStartRinging(_ call: DirectCall) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         guard let callerId = call.caller?.userId,
-              let viewController = storyboard.instantiateViewController(withIdentifier: "CallingViewController") as? CallingViewController else { return }
+              let callVC = storyboard.instantiateViewController(withIdentifier: "CallingViewController") as? CallingViewController else { return }
         
-        let controller = UIAlertController(title: "Incoming Call",
-                                           message: "Incoming \(call.isVideoCall ? "Video" : "Audio") Call from \(callerId)",
-                                           preferredStyle: .alert)
+        let alertController = UIAlertController(
+            title: "Incoming Call",
+            message: "Incoming \(call.isVideoCall ? "Video" : "Audio") Call from \(callerId)",
+            preferredStyle: .alert)
         
-        controller.addAction(UIAlertAction(title: "Accept", style: .default, handler: { (_) in
-            call.accept(with: AcceptParams(callOptions: CallOptions(isAudioEnabled: true)))
-            viewController.call = call
-            DispatchQueue.main.async {
-                controller.dismiss(animated: true, completion: nil)
-                UIViewController.topViewController?.present(viewController, animated: true, completion: nil)
-            }
-        }))
+        let acceptAction = UIAlertAction(
+            title: "Accept",
+            style: .default,
+            handler: { (_) in
+                call.accept(with: AcceptParams(callOptions: CallOptions(isAudioEnabled: true)))
+                callVC.call = call
+                DispatchQueue.main.async {
+                    alertController.dismiss(animated: true, completion: nil)
+                    UIViewController.topViewController?.present(callVC, animated: true, completion: nil)
+                }
+            })
+        let declineAction = UIAlertAction(
+            title: "Decline",
+            style: .destructive,
+            handler: { (_) in
+                call.end()
+            })
         
-        controller.addAction(UIAlertAction(title: "Decline", style: .destructive, handler: { (_) in
-            call.end()
-        }))
+        alertController.addAction(acceptAction)
+        alertController.addAction(declineAction)
         
         DispatchQueue.main.async {
-            UIViewController.topViewController?.present(controller, animated: true, completion: nil)
+            UIViewController.topViewController?.present(alertController, animated: true, completion: nil)
         }
     }
 }

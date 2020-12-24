@@ -34,7 +34,10 @@ class CallingViewController: UIViewController {
     
     @IBAction func didTapCaptureLocalButton(_ sender: Any) {
         call.captureLocalVideoView { (image, error) in
-            guard let image = image, error == nil else { return }
+            guard let image = image, error == nil else {
+                print("Failed to capture local image")
+                return
+            }
             
             UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.saveError(_:didFinishSavingWithError:contextInfo:)), nil)
         }
@@ -43,7 +46,10 @@ class CallingViewController: UIViewController {
     @IBAction
     func didTapCaptureRemoteButton(_ sender: Any) {
         call.captureRemoteVideoView { (image, error) in
-            guard let image = image, error == nil else { return }
+            guard let image = image, error == nil else {
+                print("Failed to capture remote image")
+                return
+            }
             
             UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.saveError(_:didFinishSavingWithError:contextInfo:)), nil)
         }
@@ -67,10 +73,7 @@ extension CallingViewController: DirectCallDelegate {
     }
     
     func didEnd(_ call: DirectCall) {
-        DispatchQueue.main.async {
-            self.dismiss(animated: true) {
-                print("Call Ended")
-            }
-        }
+        print("Call Ended")
+        self.dismiss(animated: true)
     }
 }

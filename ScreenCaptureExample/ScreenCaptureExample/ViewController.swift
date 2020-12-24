@@ -22,22 +22,24 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? CallingViewController,
+        guard let callVC = segue.destination as? CallingViewController,
               let call = sender as? DirectCall else { return }
         
-        destination.call = call
+        callVC.call = call
     }
     
     @IBAction func didTapDialButton(_ sender: Any) {
-        guard let calleeId = calleeIdTextField.text, calleeId.count > 0 else {
+        guard let calleeId = calleeIdTextField.text?.collapsed else {
             return
         }
         
-        let dialParams = DialParams(calleeId: calleeId, isVideoCall: true, callOptions: CallOptions(isAudioEnabled: true), customItems: [:])
+        let dialParams = DialParams(
+            calleeId: calleeId,
+            isVideoCall: true,
+            callOptions: CallOptions(isAudioEnabled: true),
+            customItems: [:])
         SendBirdCall.dial(with: dialParams) { (call, error) in
-            guard let call = call, error == nil else {
-                return
-            }
+            guard let call = call, error == nil else { return }
             
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "dial", sender: call)
@@ -51,7 +53,7 @@ class ViewController: UIViewController {
     
     @objc
     func authenticate() {
-        guard let userId = userIdTextField.text, userId.count > 0 else { return }
+        guard let userId = userIdTextField.text?.collapsed else { return }
         
         let authenticateParams = AuthenticateParams(userId: userId)
         SendBirdCall.authenticate(with: authenticateParams) { (user, error) in
