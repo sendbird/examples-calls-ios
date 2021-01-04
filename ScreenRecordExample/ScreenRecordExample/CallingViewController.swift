@@ -39,12 +39,18 @@ class CallingViewController: UIViewController {
         call.startVideo()
     }
     
+    deinit {
+        SendBirdCall.removeRecordingDelegate(identifier: "Recording Delegate")
+    }
+    
     @IBAction func didTapRecordingButton(_ sender: Any) {
         if call.localRecordingStatus == .recording, let recordingId = self.recordingId {
+            // Stop recording
             call.stopRecording(recordingId: recordingId)
             self.recordingIndicatorView.isHidden = true
             self.recordingButton.setTitle("Start Recording", for: .normal)
         } else {
+            // Start recording
             let controller = UIAlertController(title: "Record Call", message: "Choose Option", preferredStyle: .actionSheet)
             
             let remoteAudioVideoAction = UIAlertAction(title: "Remote Audio / Video", style: .default) { _ in
@@ -87,21 +93,16 @@ extension CallingViewController: DirectCallDelegate {
     }
     
     func didEnd(_ call: DirectCall) {
-        DispatchQueue.main.async {
-            self.dismiss(animated: true) {
-                print("Successfully finished")
-            }
+        self.dismiss(animated: true) {
+            print("Successfully finished")
         }
     }
 }
 
 extension CallingViewController: SendBirdRecordingDelegate {
     func didRemoteRecordingStatusChange(_ call: DirectCall) {
-        if call.remoteRecordingStatus == .recording {
-            self.remoteRecordingIndicatorView.isHidden = false
-        } else {
-            self.remoteRecordingIndicatorView.isHidden = true
-        }
+        let isRecording = call.remoteRecordingStatus == .recording
+        self.remoteRecordingIndicatorView.isHidden = !isRecording
     }
     
     func didSaveRecording(call: DirectCall, recordingId: String, options: RecordingOptions, outputURL: URL) {

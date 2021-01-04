@@ -29,15 +29,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapDialButton(_ sender: Any) {
-        guard let calleeId = calleeIdTextField.text, calleeId.count > 0 else {
-            return
-        }
+        guard let calleeId = calleeIdTextField.text?.collapsed else { return }
         
         let dialParams = DialParams(calleeId: calleeId, isVideoCall: true, callOptions: CallOptions(isAudioEnabled: true), customItems: [:])
         SendBirdCall.dial(with: dialParams) { (call, error) in
-            guard let call = call, error == nil else {
-                return
-            }
+            guard let call = call, error == nil else { return }
             
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "dial", sender: call)
@@ -51,13 +47,11 @@ class ViewController: UIViewController {
 
     @objc
     func authenticate() {
-        guard let userId = userIdTextField.text, userId.count > 0 else { return }
+        guard let userId = userIdTextField.text?.collapsed else { return }
         
         let authenticateParams = AuthenticateParams(userId: userId)
         SendBirdCall.authenticate(with: authenticateParams) { (user, error) in
-            guard let user = user, error == nil else {
-                return
-            }
+            guard let user = user, error == nil else { return }
             
             self.authenticateButton.setTitle("Sign Out", for: .normal)
             self.userIdTextField.isHidden = true

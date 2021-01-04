@@ -20,37 +20,37 @@ extension FileManager {
 
 class RecordingTableViewController: UITableViewController {
 
-    var files: [URL] = []
+    var files: [URL]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         guard let directory = FileManager.recordingsDirectory else { return }
-        self.files = ((try? FileManager.default.contentsOfDirectory(at: directory, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)) ?? []).sorted(by: { $0.absoluteString < $1.absoluteString })
+        self.files = (try? FileManager
+                        .default
+                        .contentsOfDirectory(at: directory,
+                                             includingPropertiesForKeys: nil,
+                                             options: .skipsHiddenFiles))?
+                    .sorted(by: { $0.absoluteString < $1.absoluteString })
         self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return files.count
+        return files?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell", for: indexPath)
 
-        let file = self.files[indexPath.row]
-        cell.textLabel?.text = String((file.absoluteString.split(separator: "/").last)!)
+        let file = self.files?[indexPath.row]
+        cell.textLabel?.text = file?.absoluteString.split(separator: "/").last?.description
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let url = self.files[indexPath.row]
+        guard let url = self.files?[indexPath.row] else { return }
         let player = AVPlayer(url: url)
         let playerController = AVPlayerViewController()
         playerController.player = player
