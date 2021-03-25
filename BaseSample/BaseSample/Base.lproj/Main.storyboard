@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1od-mb-Rxb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hnO-2F-e1Y">
+            <objects>
+                <viewController id="1od-mb-Rxb" customClass="ViewController" customModule="BaseSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rv1-Up-m16">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Callee's ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Bm-WO-N5J">
+                                <rect key="frame" x="138" y="288.5" width="69" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d54-d5-8J0">
+                                <rect key="frame" x="239.5" y="283" width="30" height="30"/>
+                                <state key="normal" title="Dial"/>
+                                <connections>
+                                    <action selector="didTapDialButton:" destination="1od-mb-Rxb" eventType="touchUpInside" id="21Y-Dg-MR7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wtp-4C-HCG">
+                                <rect key="frame" x="159" y="246" width="48" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-R5-3VK">
+                                <rect key="frame" x="231" y="240.5" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SendBird Calls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHC-Bt-cNz">
+                                <rect key="frame" x="127.5" y="168" width="159" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogoSymbol" translatesAutoresizingMaskIntoConstraints="NO" id="Oys-8k-92F">
+                                <rect key="frame" x="183" y="96" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="4GZ-SF-sxP"/>
+                                    <constraint firstAttribute="height" constant="48" id="Kri-9M-9Qc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXV-6M-phC">
+                                <rect key="frame" x="154.5" y="582" width="105" height="30"/>
+                                <state key="normal" title="Recording Files"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hAm-B2-8B7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Bm-WO-N5J" firstAttribute="top" secondItem="wtp-4C-HCG" secondAttribute="bottom" constant="24" id="25q-iR-FCC"/>
+                            <constraint firstItem="jHC-Bt-cNz" firstAttribute="top" secondItem="Oys-8k-92F" secondAttribute="bottom" constant="24" id="4CB-rS-rhn"/>
+                            <constraint firstItem="LXV-6M-phC" firstAttribute="centerX" secondItem="hAm-B2-8B7" secondAttribute="centerX" id="4Ve-c1-x3e"/>
+                            <constraint firstItem="2VJ-R5-3VK" firstAttribute="centerY" secondItem="wtp-4C-HCG" secondAttribute="centerY" id="9JL-um-G6y"/>
+                            <constraint firstItem="2VJ-R5-3VK" firstAttribute="leading" secondItem="wtp-4C-HCG" secondAttribute="trailing" constant="24" id="DBR-c7-FuE"/>
+                            <constraint firstItem="Oys-8k-92F" firstAttribute="top" secondItem="Rv1-Up-m16" secondAttribute="top" constant="96" id="DdU-lj-g5t"/>
+                            <constraint firstItem="jHC-Bt-cNz" firstAttribute="centerX" secondItem="Oys-8k-92F" secondAttribute="centerX" id="W9r-Su-dFK"/>
+                            <constraint firstItem="wtp-4C-HCG" firstAttribute="trailing" secondItem="hAm-B2-8B7" secondAttribute="centerX" id="bfx-7g-Wb3"/>
+                            <constraint firstItem="6Bm-WO-N5J" firstAttribute="trailing" secondItem="wtp-4C-HCG" secondAttribute="trailing" id="cB7-gA-iez"/>
+                            <constraint firstItem="Oys-8k-92F" firstAttribute="centerX" secondItem="hAm-B2-8B7" secondAttribute="centerX" id="fGh-7A-SeI"/>
+                            <constraint firstItem="d54-d5-8J0" firstAttribute="centerY" secondItem="6Bm-WO-N5J" secondAttribute="centerY" id="kmR-bm-iLp"/>
+                            <constraint firstItem="wtp-4C-HCG" firstAttribute="top" secondItem="jHC-Bt-cNz" secondAttribute="bottom" constant="49" id="oOc-zI-C6y"/>
+                            <constraint firstItem="d54-d5-8J0" firstAttribute="centerX" secondItem="2VJ-R5-3VK" secondAttribute="centerX" id="xKd-3d-IDu"/>
+                            <constraint firstItem="hAm-B2-8B7" firstAttribute="bottom" secondItem="LXV-6M-phC" secondAttribute="bottom" constant="250" id="ykW-Wo-Kaj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authenticateButton" destination="2VJ-R5-3VK" id="QZt-6p-b7Q"/>
+                        <outlet property="calleeIdTextField" destination="6Bm-WO-N5J" id="RrW-zu-3as"/>
+                        <outlet property="userIdTextField" destination="wtp-4C-HCG" id="Y5t-58-Vas"/>
+                        <segue destination="xxK-OL-UA8" kind="showDetail" identifier="dial" id="Sd9-WV-IcE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnq-Hb-WEV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18555.072463768116" y="154.6875"/>
+        </scene>
+        <!--Calling View Controller-->
+        <scene sceneID="fAr-QP-hFr">
+            <objects>
+                <viewController storyboardIdentifier="CallingViewController" id="xxK-OL-UA8" customClass="CallingViewController" customModule="BaseSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Hv-dj-00q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgX-zA-YAS">
+                                <rect key="frame" x="253" y="16" width="145" height="217.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AgX-zA-YAS" secondAttribute="height" multiplier="720:1080" id="1ZH-Qy-oCf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGK-TN-2TP">
+                                <rect key="frame" x="175" y="708" width="64" height="64"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" backgroundImage="btnCallEnd"/>
+                                <connections>
+                                    <action selector="didTapEndCallButton:" destination="xxK-OL-UA8" eventType="touchUpInside" id="uwz-bI-drE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wj2-Y5-JwX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AgX-zA-YAS" firstAttribute="top" secondItem="Wj2-Y5-JwX" secondAttribute="top" constant="16" id="7L1-Tg-vmR"/>
+                            <constraint firstItem="Wj2-Y5-JwX" firstAttribute="trailing" secondItem="AgX-zA-YAS" secondAttribute="trailing" constant="16" id="Atq-Wi-oma"/>
+                            <constraint firstItem="OGK-TN-2TP" firstAttribute="centerX" secondItem="Wj2-Y5-JwX" secondAttribute="centerX" id="BS6-ee-v71"/>
+                            <constraint firstItem="AgX-zA-YAS" firstAttribute="width" secondItem="9Hv-dj-00q" secondAttribute="width" multiplier="0.35" id="ZH1-Kq-KFf"/>
+                            <constraint firstItem="Wj2-Y5-JwX" firstAttribute="bottom" secondItem="OGK-TN-2TP" secondAttribute="bottom" constant="36" id="vVz-jR-aIK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="localVideoView" destination="AgX-zA-YAS" id="qtz-sb-rhR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vun-8H-1ka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17814.492753623188" y="154.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnCallEnd" width="64" height="64"/>
+        <image name="icLogoSymbol" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
