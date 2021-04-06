@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Commons
+import UserNotifications
 import SendBirdCalls
 
 @UIApplicationMain
@@ -13,11 +15,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let appId: String = "ADD6749c-9165-48e4-abeb-bf58f7c399df"// <#Application ID From Sendbird Dashboard#>
+        let appId: String = <#Application ID From Sendbird Dashboard#>
         SendBirdCall.configure(appId: appId)
         SendBirdCall.addDelegate(self, identifier: "AppDelegate")
         
+        remoteNotificationsRegistration(application)
         return true
+    }
+    
+    func remoteNotificationsRegistration(_ application: UIApplication) {
+        application.registerForRemoteNotifications()
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+            guard error == nil else {
+                print("Error while requesting permission for notifications.")
+                return
+            }
+            
+            // If success is true, the permission is given and notifications will be delivered.
+        }
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        UserDefaults.standard.remotePushToken = deviceToken
+        SendBirdCall.registerRemotePush(token: deviceToken, completionHandler: nil)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        SendBirdCall.application(application, didReceiveRemoteNotification: userInfo)
     }
 }
 

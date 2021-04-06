@@ -50,17 +50,12 @@
                                     <constraint firstAttribute="height" constant="48" id="Kri-9M-9Qc"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXV-6M-phC">
-                                <rect key="frame" x="154.5" y="582" width="105" height="30"/>
-                                <state key="normal" title="Recording Files"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hAm-B2-8B7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Bm-WO-N5J" firstAttribute="top" secondItem="wtp-4C-HCG" secondAttribute="bottom" constant="24" id="25q-iR-FCC"/>
                             <constraint firstItem="jHC-Bt-cNz" firstAttribute="top" secondItem="Oys-8k-92F" secondAttribute="bottom" constant="24" id="4CB-rS-rhn"/>
-                            <constraint firstItem="LXV-6M-phC" firstAttribute="centerX" secondItem="hAm-B2-8B7" secondAttribute="centerX" id="4Ve-c1-x3e"/>
                             <constraint firstItem="2VJ-R5-3VK" firstAttribute="centerY" secondItem="wtp-4C-HCG" secondAttribute="centerY" id="9JL-um-G6y"/>
                             <constraint firstItem="2VJ-R5-3VK" firstAttribute="leading" secondItem="wtp-4C-HCG" secondAttribute="trailing" constant="24" id="DBR-c7-FuE"/>
                             <constraint firstItem="Oys-8k-92F" firstAttribute="top" secondItem="Rv1-Up-m16" secondAttribute="top" constant="96" id="DdU-lj-g5t"/>
@@ -71,7 +66,6 @@
                             <constraint firstItem="d54-d5-8J0" firstAttribute="centerY" secondItem="6Bm-WO-N5J" secondAttribute="centerY" id="kmR-bm-iLp"/>
                             <constraint firstItem="wtp-4C-HCG" firstAttribute="top" secondItem="jHC-Bt-cNz" secondAttribute="bottom" constant="49" id="oOc-zI-C6y"/>
                             <constraint firstItem="d54-d5-8J0" firstAttribute="centerX" secondItem="2VJ-R5-3VK" secondAttribute="centerX" id="xKd-3d-IDu"/>
-                            <constraint firstItem="hAm-B2-8B7" firstAttribute="bottom" secondItem="LXV-6M-phC" secondAttribute="bottom" constant="250" id="ykW-Wo-Kaj"/>
                         </constraints>
                     </view>
                     <connections>

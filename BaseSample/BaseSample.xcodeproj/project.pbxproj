@@ -26,6 +26,7 @@
 		52C3B655260C8D9100796100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C3B657260C8D9100796100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C3B667260C8EB300796100 /* CallingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingViewController.swift; sourceTree = "<group>"; };
+		52DFEF6C261B0E1100149A3E /* BaseSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaseSample.entitlements; sourceTree = "<group>"; };
 		870E19F8890553D475D444AA /* Pods-BaseSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseSample.debug.xcconfig"; path = "Target Support Files/Pods-BaseSample/Pods-BaseSample.debug.xcconfig"; sourceTree = "<group>"; };
 		925E734416D32DA6B43EF4F0 /* Pods-BaseSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseSample.release.xcconfig"; path = "Target Support Files/Pods-BaseSample/Pods-BaseSample.release.xcconfig"; sourceTree = "<group>"; };
 		ADB55B86D966B77F0BA4DF40 /* libPods-BaseSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +66,7 @@
 		52C3B648260C8D9000796100 /* BaseSample */ = {
 			isa = PBXGroup;
 			children = (
+				52DFEF6C261B0E1100149A3E /* BaseSample.entitlements */,
 				52C3B649260C8D9000796100 /* AppDelegate.swift */,
 				52C3B64D260C8D9000796100 /* ViewController.swift */,
 				52C3B667260C8EB300796100 /* CallingViewController.swift */,
@@ -361,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BaseSample/BaseSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
 				INFOPLIST_FILE = BaseSample/Info.plist;
@@ -368,7 +371,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.BaseSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BaseSample/BaseSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
 				INFOPLIST_FILE = BaseSample/Info.plist;
@@ -388,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.BaseSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Commons
 import SendBirdCalls
 
 class ViewController: UIViewController {
@@ -55,6 +56,8 @@ class ViewController: UIViewController {
         let authenticateParams = AuthenticateParams(userId: userId)
         SendBirdCall.authenticate(with: authenticateParams) { (user, error) in
             guard let user = user, error == nil else { return }
+            
+            SendBirdCall.registerRemotePush(token: UserDefaults.standard.remotePushToken, completionHandler: nil)
             
             self.authenticateButton.setTitle("Sign Out", for: .normal)
             self.userIdTextField.isHidden = true
