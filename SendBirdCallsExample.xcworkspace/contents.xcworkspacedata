@@ -5,6 +5,9 @@
       location = "group:Commons">
    </FileRef>
    <FileRef
+      location = "group:BaseSample/BaseSample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ScreenShareExample/ScreenShareExample.xcodeproj">
    </FileRef>
    <FileRef
