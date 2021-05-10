@@ -7,6 +7,7 @@ project 'ScreenRecord/ScreenRecord.xcodeproj'
 project 'ScreenShare/ScreenShare.xcodeproj'
 project 'MediaControl/MediaControl.xcodeproj'
 project 'CallHistory/CallHistory.xcodeproj'
+project 'SoundEffect/SoundEffect.xcodeproj'
 
 target 'BaseSample' do
     project 'BaseSample/BaseSample.xcodeproj'
@@ -35,5 +36,10 @@ end
 
 target 'CallHistory' do
     project 'CallHistory/CallHistory.xcodeproj'
+    pod 'SendBirdCalls'
+end
+
+target 'SoundEffect' do
+    project 'SoundEffect/SoundEffect.xcodeproj'
     pod 'SendBirdCalls'
 end

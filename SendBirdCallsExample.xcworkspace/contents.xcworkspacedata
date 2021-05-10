@@ -11,6 +11,9 @@
       location = "group:ScreenCapture/ScreenCapture.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SoundEffect/SoundEffect.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ScreenShare/ScreenShare.xcodeproj">
    </FileRef>
    <FileRef
