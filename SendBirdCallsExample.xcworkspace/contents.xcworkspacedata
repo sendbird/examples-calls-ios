@@ -8,13 +8,13 @@
       location = "group:BaseSample/BaseSample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ScreenShareExample/ScreenShareExample.xcodeproj">
+      location = "group:ScreenCapture/ScreenCapture.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ScreenRecordExample/ScreenRecordExample.xcodeproj">
+      location = "group:ScreenShare/ScreenShare.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ScreenCaptureExample/ScreenCaptureExample.xcodeproj">
+      location = "group:ScreenRecord/ScreenRecord.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

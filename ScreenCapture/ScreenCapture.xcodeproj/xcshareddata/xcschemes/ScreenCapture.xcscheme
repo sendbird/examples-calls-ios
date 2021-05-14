@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1200"
+   LastUpgradeVersion = "1250"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "524854342578BFB30022CD25"
-               BuildableName = "ScreenRecordExample.app"
-               BlueprintName = "ScreenRecordExample"
-               ReferencedContainer = "container:ScreenRecordExample.xcodeproj">
+               BlueprintIdentifier = "524854132578BF900022CD25"
+               BuildableName = "ScreenCapture.app"
+               BlueprintName = "ScreenCapture"
+               ReferencedContainer = "container:ScreenCapture.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,19 +44,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "524854342578BFB30022CD25"
-            BuildableName = "ScreenRecordExample.app"
-            BlueprintName = "ScreenRecordExample"
-            ReferencedContainer = "container:ScreenRecordExample.xcodeproj">
+            BlueprintIdentifier = "524854132578BF900022CD25"
+            BuildableName = "ScreenCapture.app"
+            BlueprintName = "ScreenCapture"
+            ReferencedContainer = "container:ScreenCapture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE&#10;&#10;OS_ACTIVITY_MODE = disable&#10;&#10;OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -68,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "524854342578BFB30022CD25"
-            BuildableName = "ScreenRecordExample.app"
-            BlueprintName = "ScreenRecordExample"
-            ReferencedContainer = "container:ScreenRecordExample.xcodeproj">
+            BlueprintIdentifier = "524854132578BF900022CD25"
+            BuildableName = "ScreenCapture.app"
+            BlueprintName = "ScreenCapture"
+            ReferencedContainer = "container:ScreenCapture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

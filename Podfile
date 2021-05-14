@@ -2,26 +2,26 @@ platform :ios, '9.0'
 
 workspace 'SendBirdCallsExample'
 project 'BaseSample/BaseSample.xcodeproj'
-project 'ScreenCaptureExample/ScreenCaptureExample.xcodeproj'
-project 'ScreenRecordExample/ScreenRecordExample.xcodeproj'
-project 'ScreenShareExample/ScreenShareExample.xcodeproj'
+project 'ScreenCapture/ScreenCapture.xcodeproj'
+project 'ScreenRecord/ScreenRecord.xcodeproj'
+project 'ScreenShare/ScreenShare.xcodeproj'
 
 target 'BaseSample' do
     project 'BaseSample/BaseSample.xcodeproj'
     pod 'SendBirdCalls'
 end
 
-target 'ScreenCaptureExample' do
-    project 'ScreenCaptureExample/ScreenCaptureExample.xcodeproj'
+target 'ScreenCapture' do
+    project 'ScreenCapture/ScreenCapture.xcodeproj'
     pod 'SendBirdCalls'
 end
 
-target 'ScreenRecordExample' do
-    project 'ScreenRecordExample/ScreenRecordExample.xcodeproj'
+target 'ScreenRecord' do
+    project 'ScreenRecord/ScreenRecord.xcodeproj'
     pod 'SendBirdCalls'
 end
 
-target 'ScreenShareExample' do
-    project 'ScreenShareExample/ScreenShareExample.xcodeproj'
+target 'ScreenShare' do
+    project 'ScreenShare/ScreenShare.xcodeproj'
     pod 'SendBirdCalls'
 end

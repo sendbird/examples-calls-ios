@@ -14,13 +14,12 @@
 		527D079D25FB792C00E2DC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527D079B25FB792C00E2DC2B /* LaunchScreen.storyboard */; };
 		527D07B025FB7A4E00E2DC2B /* CallingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D07AF25FB7A4E00E2DC2B /* CallingViewController.swift */; };
 		527D07BB25FB7C1900E2DC2B /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = 527D07BA25FB7C1900E2DC2B /* Commons */; };
-		F7FFF51EBA3398E43FF260B8 /* libPods-ScreenShareExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C616B8ACDDFF8FAC76EE2D0 /* libPods-ScreenShareExample.a */; };
+		EC9412D353F858A420AA8E8B /* libPods-ScreenShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A86D4BE44BC766894468AC /* libPods-ScreenShare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BC956E0DB6C23CC65D7091A /* Pods-ScreenShareExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareExample.release.xcconfig"; path = "Target Support Files/Pods-ScreenShareExample/Pods-ScreenShareExample.release.xcconfig"; sourceTree = "<group>"; };
-		0C616B8ACDDFF8FAC76EE2D0 /* libPods-ScreenShareExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScreenShareExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		527D078D25FB792900E2DC2B /* ScreenShareExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenShareExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527D078D25FB792900E2DC2B /* ScreenShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527D079025FB792900E2DC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		527D079425FB792900E2DC2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		527D079725FB792900E2DC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,7 +27,10 @@
 		527D079C25FB792C00E2DC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		527D079E25FB792C00E2DC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527D07AF25FB7A4E00E2DC2B /* CallingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingViewController.swift; sourceTree = "<group>"; };
+		A5A86D4BE44BC766894468AC /* libPods-ScreenShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScreenShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC47B20BD685AF74FD1FC50C /* Pods-ScreenShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShare.release.xcconfig"; path = "Target Support Files/Pods-ScreenShare/Pods-ScreenShare.release.xcconfig"; sourceTree = "<group>"; };
 		AF3EAA5622E2E58FF966C972 /* Pods-ScreenShareExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareExample.debug.xcconfig"; path = "Target Support Files/Pods-ScreenShareExample/Pods-ScreenShareExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B605FA00C40600E8894AD85D /* Pods-ScreenShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShare.debug.xcconfig"; path = "Target Support Files/Pods-ScreenShare/Pods-ScreenShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7FFF51EBA3398E43FF260B8 /* libPods-ScreenShareExample.a in Frameworks */,
 				527D07BB25FB7C1900E2DC2B /* Commons in Frameworks */,
+				EC9412D353F858A420AA8E8B /* libPods-ScreenShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +51,8 @@
 			children = (
 				AF3EAA5622E2E58FF966C972 /* Pods-ScreenShareExample.debug.xcconfig */,
 				0BC956E0DB6C23CC65D7091A /* Pods-ScreenShareExample.release.xcconfig */,
+				B605FA00C40600E8894AD85D /* Pods-ScreenShare.debug.xcconfig */,
+				AC47B20BD685AF74FD1FC50C /* Pods-ScreenShare.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -57,7 +61,7 @@
 		527D078425FB792900E2DC2B = {
 			isa = PBXGroup;
 			children = (
-				527D078F25FB792900E2DC2B /* ScreenShareExample */,
+				527D078F25FB792900E2DC2B /* ScreenShare */,
 				527D078E25FB792900E2DC2B /* Products */,
 				19DDAA074CC20D05760E6C51 /* Pods */,
 				D9835B371E16831972E2CEED /* Frameworks */,
@@ -67,12 +71,12 @@
 		527D078E25FB792900E2DC2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				527D078D25FB792900E2DC2B /* ScreenShareExample.app */,
+				527D078D25FB792900E2DC2B /* ScreenShare.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		527D078F25FB792900E2DC2B /* ScreenShareExample */ = {
+		527D078F25FB792900E2DC2B /* ScreenShare */ = {
 			isa = PBXGroup;
 			children = (
 				527D079025FB792900E2DC2B /* AppDelegate.swift */,
@@ -83,13 +87,13 @@
 				527D079B25FB792C00E2DC2B /* LaunchScreen.storyboard */,
 				527D079E25FB792C00E2DC2B /* Info.plist */,
 			);
-			path = ScreenShareExample;
+			path = ScreenShare;
 			sourceTree = "<group>";
 		};
 		D9835B371E16831972E2CEED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C616B8ACDDFF8FAC76EE2D0 /* libPods-ScreenShareExample.a */,
+				A5A86D4BE44BC766894468AC /* libPods-ScreenShare.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		527D078C25FB792900E2DC2B /* ScreenShareExample */ = {
+		527D078C25FB792900E2DC2B /* ScreenShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 527D07A125FB792C00E2DC2B /* Build configuration list for PBXNativeTarget "ScreenShareExample" */;
+			buildConfigurationList = 527D07A125FB792C00E2DC2B /* Build configuration list for PBXNativeTarget "ScreenShare" */;
 			buildPhases = (
 				22F1DDFD1783B59AD4202F70 /* [CP] Check Pods Manifest.lock */,
 				527D078925FB792900E2DC2B /* Sources */,
@@ -111,12 +115,12 @@
 			);
 			dependencies = (
 			);
-			name = ScreenShareExample;
+			name = ScreenShare;
 			packageProductDependencies = (
 				527D07BA25FB7C1900E2DC2B /* Commons */,
 			);
 			productName = ScreenShareExample;
-			productReference = 527D078D25FB792900E2DC2B /* ScreenShareExample.app */;
+			productReference = 527D078D25FB792900E2DC2B /* ScreenShare.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 527D078825FB792900E2DC2B /* Build configuration list for PBXProject "ScreenShareExample" */;
+			buildConfigurationList = 527D078825FB792900E2DC2B /* Build configuration list for PBXProject "ScreenShare" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				527D078C25FB792900E2DC2B /* ScreenShareExample */,
+				527D078C25FB792900E2DC2B /* ScreenShare */,
 			);
 		};
 /* End PBXProject section */
@@ -180,7 +184,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ScreenShareExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ScreenShare-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -193,15 +197,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenShareExample/Pods-ScreenShareExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenShare/Pods-ScreenShare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenShareExample/Pods-ScreenShareExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenShare/Pods-ScreenShare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenShareExample/Pods-ScreenShareExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenShare/Pods-ScreenShare-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -357,19 +361,19 @@
 		};
 		527D07A225FB792C00E2DC2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF3EAA5622E2E58FF966C972 /* Pods-ScreenShareExample.debug.xcconfig */;
+			baseConfigurationReference = B605FA00C40600E8894AD85D /* Pods-ScreenShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
-				INFOPLIST_FILE = ScreenShareExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenShare/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart.example.screenshare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,19 +382,19 @@
 		};
 		527D07A325FB792C00E2DC2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BC956E0DB6C23CC65D7091A /* Pods-ScreenShareExample.release.xcconfig */;
+			baseConfigurationReference = AC47B20BD685AF74FD1FC50C /* Pods-ScreenShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
-				INFOPLIST_FILE = ScreenShareExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenShare/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart.example.screenshare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		527D078825FB792900E2DC2B /* Build configuration list for PBXProject "ScreenShareExample" */ = {
+		527D078825FB792900E2DC2B /* Build configuration list for PBXProject "ScreenShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				527D079F25FB792C00E2DC2B /* Debug */,
@@ -409,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		527D07A125FB792C00E2DC2B /* Build configuration list for PBXNativeTarget "ScreenShareExample" */ = {
+		527D07A125FB792C00E2DC2B /* Build configuration list for PBXNativeTarget "ScreenShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				527D07A225FB792C00E2DC2B /* Debug */,

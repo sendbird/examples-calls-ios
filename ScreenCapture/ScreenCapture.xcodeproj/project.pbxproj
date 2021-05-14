@@ -14,11 +14,12 @@
 		524854242578BF930022CD25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524854222578BF930022CD25 /* LaunchScreen.storyboard */; };
 		52940AFD257E11FE008BC890 /* CallingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52940AFC257E11FE008BC890 /* CallingViewController.swift */; };
 		52B099AE257E1AF600C89A8D /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = 52B099AD257E1AF600C89A8D /* Commons */; };
-		FF70327528887A6915FBA539 /* libPods-ScreenCaptureExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D81693EDDB6E0AA38D4CF2 /* libPods-ScreenCaptureExample.a */; };
+		F70A70A249FABE0530672DEF /* libPods-ScreenCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15961DB8E8F61EE71AE0A647 /* libPods-ScreenCapture.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		524854142578BF900022CD25 /* ScreenCaptureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCaptureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15961DB8E8F61EE71AE0A647 /* libPods-ScreenCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScreenCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524854142578BF900022CD25 /* ScreenCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524854172578BF900022CD25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5248541B2578BF900022CD25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5248541E2578BF900022CD25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,9 +27,10 @@
 		524854232578BF930022CD25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524854252578BF930022CD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52940AFC257E11FE008BC890 /* CallingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingViewController.swift; sourceTree = "<group>"; };
-		59D81693EDDB6E0AA38D4CF2 /* libPods-ScreenCaptureExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScreenCaptureExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81A16108F8EAB0CCB4BAFF4F /* Pods-ScreenCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCapture.debug.xcconfig"; path = "Target Support Files/Pods-ScreenCapture/Pods-ScreenCapture.debug.xcconfig"; sourceTree = "<group>"; };
 		8DA0797F57C01EF391BFCD30 /* Pods-ScreenCaptureExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCaptureExample.debug.xcconfig"; path = "Target Support Files/Pods-ScreenCaptureExample/Pods-ScreenCaptureExample.debug.xcconfig"; sourceTree = "<group>"; };
 		BF153B5D26C9DCFFD03D13BA /* Pods-ScreenCaptureExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCaptureExample.release.xcconfig"; path = "Target Support Files/Pods-ScreenCaptureExample/Pods-ScreenCaptureExample.release.xcconfig"; sourceTree = "<group>"; };
+		DD4FA4941AC8D9F10114A604 /* Pods-ScreenCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCapture.release.xcconfig"; path = "Target Support Files/Pods-ScreenCapture/Pods-ScreenCapture.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF70327528887A6915FBA539 /* libPods-ScreenCaptureExample.a in Frameworks */,
 				52B099AE257E1AF600C89A8D /* Commons in Frameworks */,
+				F70A70A249FABE0530672DEF /* libPods-ScreenCapture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +49,7 @@
 		5248540B2578BF900022CD25 = {
 			isa = PBXGroup;
 			children = (
-				524854162578BF900022CD25 /* ScreenCaptureExample */,
+				524854162578BF900022CD25 /* ScreenCapture */,
 				524854152578BF900022CD25 /* Products */,
 				B6AEF25AB840676EB059CDBB /* Pods */,
 				B69D426E12A9FC2C9108DDE1 /* Frameworks */,
@@ -57,12 +59,12 @@
 		524854152578BF900022CD25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				524854142578BF900022CD25 /* ScreenCaptureExample.app */,
+				524854142578BF900022CD25 /* ScreenCapture.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		524854162578BF900022CD25 /* ScreenCaptureExample */ = {
+		524854162578BF900022CD25 /* ScreenCapture */ = {
 			isa = PBXGroup;
 			children = (
 				524854172578BF900022CD25 /* AppDelegate.swift */,
@@ -73,13 +75,13 @@
 				524854222578BF930022CD25 /* LaunchScreen.storyboard */,
 				524854252578BF930022CD25 /* Info.plist */,
 			);
-			path = ScreenCaptureExample;
+			path = ScreenCapture;
 			sourceTree = "<group>";
 		};
 		B69D426E12A9FC2C9108DDE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59D81693EDDB6E0AA38D4CF2 /* libPods-ScreenCaptureExample.a */,
+				15961DB8E8F61EE71AE0A647 /* libPods-ScreenCapture.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +91,8 @@
 			children = (
 				8DA0797F57C01EF391BFCD30 /* Pods-ScreenCaptureExample.debug.xcconfig */,
 				BF153B5D26C9DCFFD03D13BA /* Pods-ScreenCaptureExample.release.xcconfig */,
+				81A16108F8EAB0CCB4BAFF4F /* Pods-ScreenCapture.debug.xcconfig */,
+				DD4FA4941AC8D9F10114A604 /* Pods-ScreenCapture.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -97,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		524854132578BF900022CD25 /* ScreenCaptureExample */ = {
+		524854132578BF900022CD25 /* ScreenCapture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 524854282578BF930022CD25 /* Build configuration list for PBXNativeTarget "ScreenCaptureExample" */;
+			buildConfigurationList = 524854282578BF930022CD25 /* Build configuration list for PBXNativeTarget "ScreenCapture" */;
 			buildPhases = (
 				7EEAEA8778C3F37CE23C15FF /* [CP] Check Pods Manifest.lock */,
 				524854102578BF900022CD25 /* Sources */,
@@ -111,12 +115,12 @@
 			);
 			dependencies = (
 			);
-			name = ScreenCaptureExample;
+			name = ScreenCapture;
 			packageProductDependencies = (
 				52B099AD257E1AF600C89A8D /* Commons */,
 			);
 			productName = ScreenCaptureExample;
-			productReference = 524854142578BF900022CD25 /* ScreenCaptureExample.app */;
+			productReference = 524854142578BF900022CD25 /* ScreenCapture.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5248540F2578BF900022CD25 /* Build configuration list for PBXProject "ScreenCaptureExample" */;
+			buildConfigurationList = 5248540F2578BF900022CD25 /* Build configuration list for PBXProject "ScreenCapture" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				524854132578BF900022CD25 /* ScreenCaptureExample */,
+				524854132578BF900022CD25 /* ScreenCapture */,
 			);
 		};
 /* End PBXProject section */
@@ -171,15 +175,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenCaptureExample/Pods-ScreenCaptureExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCapture/Pods-ScreenCapture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenCaptureExample/Pods-ScreenCaptureExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCapture/Pods-ScreenCapture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenCaptureExample/Pods-ScreenCaptureExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenCapture/Pods-ScreenCapture-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7EEAEA8778C3F37CE23C15FF /* [CP] Check Pods Manifest.lock */ = {
@@ -197,7 +201,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ScreenCaptureExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ScreenCapture-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,20 +361,20 @@
 		};
 		524854292578BF930022CD25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA0797F57C01EF391BFCD30 /* Pods-ScreenCaptureExample.debug.xcconfig */;
+			baseConfigurationReference = 81A16108F8EAB0CCB4BAFF4F /* Pods-ScreenCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ScreenCaptureExample/ScreenCaptureExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
-				INFOPLIST_FILE = ScreenCaptureExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenCapture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart.example.screencapture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,20 +383,20 @@
 		};
 		5248542A2578BF930022CD25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF153B5D26C9DCFFD03D13BA /* Pods-ScreenCaptureExample.release.xcconfig */;
+			baseConfigurationReference = DD4FA4941AC8D9F10114A604 /* Pods-ScreenCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ScreenCaptureExample/ScreenCaptureExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
-				INFOPLIST_FILE = ScreenCaptureExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenCapture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart.example.screencapture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,7 +406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5248540F2578BF900022CD25 /* Build configuration list for PBXProject "ScreenCaptureExample" */ = {
+		5248540F2578BF900022CD25 /* Build configuration list for PBXProject "ScreenCapture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				524854262578BF930022CD25 /* Debug */,
@@ -411,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		524854282578BF930022CD25 /* Build configuration list for PBXNativeTarget "ScreenCaptureExample" */ = {
+		524854282578BF930022CD25 /* Build configuration list for PBXNativeTarget "ScreenCapture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				524854292578BF930022CD25 /* Debug */,

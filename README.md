@@ -34,11 +34,11 @@ Examples in this repository use basic Remote Notifications to receive an incomin
 ### [BaseSample](https://github.com/sendbird/examples-calls-ios/tree/main/BaseSample)
 `BaseSample` project contains simple implementation of making and receiving a DirectCall. 
 
-### [ScreenCaptureExample](https://github.com/sendbird/examples-calls-ios/tree/main/ScreenCaptureExample)
-`ScreenCaptureExample` project contains implementation of capturing local and remote video view while making a DirectCall. 
+### [ScreenCapture Example](https://github.com/sendbird/examples-calls-ios/tree/main/ScreenCapture)
+`ScreenCapture` project contains implementation of capturing local and remote video view while making a DirectCall. 
 
-### [ScreenRecordingExample](https://github.com/sendbird/examples-calls-ios/tree/main/ScreenRecordExample)
-`ScreenRecordingExample` project contains implementation of recording local and remote user's video and audio while making a DirectCall. 
+### [ScreenRecording Example](https://github.com/sendbird/examples-calls-ios/tree/main/ScreenRecord)
+`ScreenRecording` project contains implementation of recording local and remote user's video and audio while making a DirectCall. 
 
-### [ScreenShareExample](https://github.com/sendbird/examples-calls-ios/tree/main/ScreenShareExample)
-`ScreenShareExample` project contains implementation of sharing local screen with the remote user while making a DirectCall. This sample uses Apple's `ReplayKit` to capture and share the app's screen.  
+### [ScreenShare Example](https://github.com/sendbird/examples-calls-ios/tree/main/ScreenShare)
+`ScreenShare` project contains implementation of sharing local screen with the remote user while making a DirectCall. This sample uses Apple's `ReplayKit` to capture and share the app's screen.  
