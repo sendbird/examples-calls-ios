@@ -17,6 +17,9 @@
       location = "group:ScreenRecord/ScreenRecord.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MediaControl/MediaControl.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
