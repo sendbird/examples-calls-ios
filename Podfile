@@ -11,6 +11,7 @@ project 'SoundEffect/SoundEffect.xcodeproj'
 project 'LocalViewControl/LocalViewControl.xcodeproj'
 project 'VoIPNotifications/VoIPNotifications.xcodeproj'
 project 'AutoAnswer/AutoAnswer.xcodeproj'
+project 'SwiftUIBasic/SwiftUIBasic.xcodeproj'
 
 target 'BaseSample' do
     project 'BaseSample/BaseSample.xcodeproj'
@@ -61,3 +62,9 @@ target 'AutoAnswer' do
     project 'AutoAnswer/AutoAnswer.xcodeproj'
     pod 'SendBirdCalls'
 end
+
+target 'SwiftUIBasic' do
+    project 'SwiftUIBasic/SwiftUIBasic.xcodeproj'
+    pod 'SendBirdCalls'
+end
+
