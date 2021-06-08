@@ -22,4 +22,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CallHistory/CallHistory.xcodeproj">
+   </FileRef>
 </Workspace>
