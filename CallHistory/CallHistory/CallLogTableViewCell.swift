@@ -28,9 +28,7 @@ class CallLogTableViewCell: UITableViewCell {
     }()
     
     func updateUI() {
-        let remoteUser = callLog.myRole == .caller
-            ? callLog.callee
-            : callLog.caller
+        let remoteUser = callLog.myRole == .caller ? callLog.callee : callLog.caller
         
         callTypeImageView.image = UIImage.callTypeImage(
             outgoing: callLog.myRole == .caller,

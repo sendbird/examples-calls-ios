@@ -29,19 +29,19 @@ class CallLogTableViewController: UITableViewController {
             SendBirdCall.authenticate(with: authenticateParams) { [self] (user, error) in
                 guard let user = user, error == nil else { return }
                 
-                self.userIdTextField.isHidden = true
-                self.authButton.setTitle("Sign Out", for: .normal)
+                userIdTextField.isHidden = true
+                authButton.setTitle("Sign Out", for: .normal)
                 
                 print("Successfully authenticated with userId: \(user.userId)")
                 
-                self.fetch()
+                fetch()
             }
         } else {
-            SendBirdCall.deauthenticate {[self] (error) in
+            SendBirdCall.deauthenticate { [self] (error) in
                 guard error == nil else { return }
                 
-                self.userIdTextField.isHidden = false
-                self.authButton.setTitle("Sign In", for: .normal)
+                userIdTextField.isHidden = false
+                authButton.setTitle("Sign In", for: .normal)
                 
                 print("Successfully deauthenticated from SendBirdCalls")
             }
