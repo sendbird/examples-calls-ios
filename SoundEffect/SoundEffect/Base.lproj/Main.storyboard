@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RyX-o6-OEs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="a8r-Q6-Q9c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RyX-o6-OEs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xoD-kf-5w2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.4823529412" green="0.32549019610000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2h9-8o-7Dx" kind="relationship" relationship="rootViewController" id="ULI-L2-ynw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vd-AX-WDN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="91.741071428571431"/>
+        </scene>
+        <!--Sound Effect-->
+        <scene sceneID="gog-Mm-96X">
+            <objects>
+                <viewController id="2h9-8o-7Dx" customClass="CallViewController" customModule="SoundEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lw3-Tv-EPQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Callee's ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rUK-w3-cuv">
+                                <rect key="frame" x="138" y="288.5" width="69" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo9-Iq-23T">
+                                <rect key="frame" x="239.5" y="283" width="30" height="30"/>
+                                <state key="normal" title="Dial"/>
+                                <connections>
+                                    <action selector="didTapDialButton" destination="2h9-8o-7Dx" eventType="touchUpInside" id="tdP-gJ-Cy9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhB-Mj-Vcw">
+                                <rect key="frame" x="159" y="246" width="48" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-4M-a9j">
+                                <rect key="frame" x="231" y="240.5" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="didTapAuthenticate" destination="2h9-8o-7Dx" eventType="touchUpInside" id="Uhj-9p-5Cc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SendBird Calls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-7K-AIh">
+                                <rect key="frame" x="127.5" y="168" width="159" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogoSymbol" translatesAutoresizingMaskIntoConstraints="NO" id="nc3-BL-tEE">
+                                <rect key="frame" x="183" y="96" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="dCu-Rc-Lde"/>
+                                    <constraint firstAttribute="height" constant="48" id="gbY-UT-KgA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5b-qz-npo">
+                                <rect key="frame" x="20" y="367" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S1R-Wz-3bK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S1R-Wz-3bK" firstAttribute="trailing" secondItem="n5b-qz-npo" secondAttribute="trailing" constant="20" id="1cX-a3-Vdp"/>
+                            <constraint firstItem="nc3-BL-tEE" firstAttribute="centerX" secondItem="S1R-Wz-3bK" secondAttribute="centerX" id="3Ou-AK-iqX"/>
+                            <constraint firstItem="GWk-7K-AIh" firstAttribute="top" secondItem="nc3-BL-tEE" secondAttribute="bottom" constant="24" id="7cY-Fj-xVt"/>
+                            <constraint firstItem="XhB-Mj-Vcw" firstAttribute="top" secondItem="GWk-7K-AIh" secondAttribute="bottom" constant="49" id="8X7-Ws-LgC"/>
+                            <constraint firstItem="Xo9-Iq-23T" firstAttribute="centerY" secondItem="rUK-w3-cuv" secondAttribute="centerY" id="8ld-Dg-Hlb"/>
+                            <constraint firstItem="rUK-w3-cuv" firstAttribute="top" secondItem="XhB-Mj-Vcw" secondAttribute="bottom" constant="24" id="Kql-K8-P8Z"/>
+                            <constraint firstItem="nc3-BL-tEE" firstAttribute="top" secondItem="Lw3-Tv-EPQ" secondAttribute="top" constant="96" id="Ocm-bE-dNu"/>
+                            <constraint firstItem="rUK-w3-cuv" firstAttribute="trailing" secondItem="XhB-Mj-Vcw" secondAttribute="trailing" id="TSW-pN-9KG"/>
+                            <constraint firstItem="XhB-Mj-Vcw" firstAttribute="trailing" secondItem="S1R-Wz-3bK" secondAttribute="centerX" id="daj-3r-xLY"/>
+                            <constraint firstItem="FJh-4M-a9j" firstAttribute="centerY" secondItem="XhB-Mj-Vcw" secondAttribute="centerY" id="dqO-Sy-uk7"/>
+                            <constraint firstItem="n5b-qz-npo" firstAttribute="top" secondItem="rUK-w3-cuv" secondAttribute="bottom" constant="60" id="mpc-er-S2v"/>
+                            <constraint firstItem="Xo9-Iq-23T" firstAttribute="centerX" secondItem="FJh-4M-a9j" secondAttribute="centerX" id="nbE-OC-QQi"/>
+                            <constraint firstItem="n5b-qz-npo" firstAttribute="leading" secondItem="S1R-Wz-3bK" secondAttribute="leading" constant="20" id="sqB-xh-Eua"/>
+                            <constraint firstItem="GWk-7K-AIh" firstAttribute="centerX" secondItem="nc3-BL-tEE" secondAttribute="centerX" id="xDL-l0-BEa"/>
+                            <constraint firstItem="FJh-4M-a9j" firstAttribute="leading" secondItem="XhB-Mj-Vcw" secondAttribute="trailing" constant="24" id="xYs-CM-sok"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sound Effect" id="mDt-Jf-B4V"/>
+                    <connections>
+                        <outlet property="authenticateButton" destination="FJh-4M-a9j" id="hUg-4s-WUy"/>
+                        <outlet property="callStatusLabel" destination="n5b-qz-npo" id="Gb1-7L-XSG"/>
+                        <outlet property="calleeIdTextField" destination="rUK-w3-cuv" id="Yuk-bg-uG3"/>
+                        <outlet property="userIdTextField" destination="XhB-Mj-Vcw" id="iiJ-XQ-CG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCZ-jq-IsQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icLogoSymbol" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

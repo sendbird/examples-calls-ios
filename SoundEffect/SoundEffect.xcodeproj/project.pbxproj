@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91504D02648F7CA0035B5E7 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = A91504CF2648F7CA0035B5E7 /* Commons */; };
+		A91504D32648FCC10035B5E7 /* ConnectionLost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91504D22648FCC10035B5E7 /* ConnectionLost.mp3 */; };
+		A91504D72648FCC90035B5E7 /* ConnectionRestored.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91504D42648FCC90035B5E7 /* ConnectionRestored.mp3 */; };
+		A91504D82648FCC90035B5E7 /* Dialing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91504D52648FCC90035B5E7 /* Dialing.mp3 */; };
+		A91504D92648FCC90035B5E7 /* Ringing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91504D62648FCC90035B5E7 /* Ringing.mp3 */; };
+		A9C4591E2644D84E00F2B408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4591D2644D84E00F2B408 /* AppDelegate.swift */; };
+		A9C459222644D84E00F2B408 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C459212644D84E00F2B408 /* CallViewController.swift */; };
+		A9C459252644D84E00F2B408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C459232644D84E00F2B408 /* Main.storyboard */; };
+		A9C459272644D84F00F2B408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C459262644D84F00F2B408 /* Assets.xcassets */; };
+		A9C4592A2644D84F00F2B408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C459282644D84F00F2B408 /* LaunchScreen.storyboard */; };
+		A9C459322644FDEE00F2B408 /* AppDelegate.SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C459312644FDEE00F2B408 /* AppDelegate.SoundEffect.swift */; };
+		F8B7FD61820724D8AF9A32D6 /* libPods-SoundEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC75A09CF5DB68B12DCC612 /* libPods-SoundEffect.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C20BF82C3D9364537DC16E2 /* Pods-SoundEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundEffect.release.xcconfig"; path = "Target Support Files/Pods-SoundEffect/Pods-SoundEffect.release.xcconfig"; sourceTree = "<group>"; };
+		94FF34F30B06F5ABEB9D13B1 /* Pods-SoundEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundEffect.debug.xcconfig"; path = "Target Support Files/Pods-SoundEffect/Pods-SoundEffect.debug.xcconfig"; sourceTree = "<group>"; };
+		A91504D12648F81D0035B5E7 /* SoundEffect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundEffect.entitlements; sourceTree = "<group>"; };
+		A91504D22648FCC10035B5E7 /* ConnectionLost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ConnectionLost.mp3; sourceTree = "<group>"; };
+		A91504D42648FCC90035B5E7 /* ConnectionRestored.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ConnectionRestored.mp3; sourceTree = "<group>"; };
+		A91504D52648FCC90035B5E7 /* Dialing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dialing.mp3; sourceTree = "<group>"; };
+		A91504D62648FCC90035B5E7 /* Ringing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ringing.mp3; sourceTree = "<group>"; };
+		A91504DA264A0A250035B5E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A9C4591A2644D84E00F2B408 /* SoundEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C4591D2644D84E00F2B408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9C459212644D84E00F2B408 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		A9C459242644D84E00F2B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9C459262644D84F00F2B408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9C459292644D84F00F2B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9C4592B2644D84F00F2B408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C459312644FDEE00F2B408 /* AppDelegate.SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.SoundEffect.swift; sourceTree = "<group>"; };
+		CEC75A09CF5DB68B12DCC612 /* libPods-SoundEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundEffect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9C459172644D84E00F2B408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B7FD61820724D8AF9A32D6 /* libPods-SoundEffect.a in Frameworks */,
+				A91504D02648F7CA0035B5E7 /* Commons in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CCB75686F40C6115BF75E60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94FF34F30B06F5ABEB9D13B1 /* Pods-SoundEffect.debug.xcconfig */,
+				7C20BF82C3D9364537DC16E2 /* Pods-SoundEffect.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		50CA4DE50FCBA4C89E680A12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC75A09CF5DB68B12DCC612 /* libPods-SoundEffect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9C459112644D84E00F2B408 = {
+			isa = PBXGroup;
+			children = (
+				A91504DA264A0A250035B5E7 /* README.md */,
+				A9C4591C2644D84E00F2B408 /* SoundEffect */,
+				A9C4591B2644D84E00F2B408 /* Products */,
+				4CCB75686F40C6115BF75E60 /* Pods */,
+				50CA4DE50FCBA4C89E680A12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9C4591B2644D84E00F2B408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4591A2644D84E00F2B408 /* SoundEffect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9C4591C2644D84E00F2B408 /* SoundEffect */ = {
+			isa = PBXGroup;
+			children = (
+				A91504D12648F81D0035B5E7 /* SoundEffect.entitlements */,
+				A9C4591D2644D84E00F2B408 /* AppDelegate.swift */,
+				A9C459312644FDEE00F2B408 /* AppDelegate.SoundEffect.swift */,
+				A9C459212644D84E00F2B408 /* CallViewController.swift */,
+				A9C459232644D84E00F2B408 /* Main.storyboard */,
+				A9C459262644D84F00F2B408 /* Assets.xcassets */,
+				A9C459282644D84F00F2B408 /* LaunchScreen.storyboard */,
+				A9C4592B2644D84F00F2B408 /* Info.plist */,
+				A91504D22648FCC10035B5E7 /* ConnectionLost.mp3 */,
+				A91504D42648FCC90035B5E7 /* ConnectionRestored.mp3 */,
+				A91504D52648FCC90035B5E7 /* Dialing.mp3 */,
+				A91504D62648FCC90035B5E7 /* Ringing.mp3 */,
+			);
+			path = SoundEffect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9C459192644D84E00F2B408 /* SoundEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C4592E2644D84F00F2B408 /* Build configuration list for PBXNativeTarget "SoundEffect" */;
+			buildPhases = (
+				4E1FCDA85971D9ACF17633B2 /* [CP] Check Pods Manifest.lock */,
+				A9C459162644D84E00F2B408 /* Sources */,
+				A9C459172644D84E00F2B408 /* Frameworks */,
+				A9C459182644D84E00F2B408 /* Resources */,
+				B487DADAF6B044E987AA0780 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundEffect;
+			packageProductDependencies = (
+				A91504CF2648F7CA0035B5E7 /* Commons */,
+			);
+			productName = SoundEffect;
+			productReference = A9C4591A2644D84E00F2B408 /* SoundEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9C459122644D84E00F2B408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A9C459192644D84E00F2B408 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A9C459152644D84E00F2B408 /* Build configuration list for PBXProject "SoundEffect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9C459112644D84E00F2B408;
+			productRefGroup = A9C4591B2644D84E00F2B408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9C459192644D84E00F2B408 /* SoundEffect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9C459182644D84E00F2B408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C4592A2644D84F00F2B408 /* LaunchScreen.storyboard in Resources */,
+				A9C459272644D84F00F2B408 /* Assets.xcassets in Resources */,
+				A91504D32648FCC10035B5E7 /* ConnectionLost.mp3 in Resources */,
+				A91504D92648FCC90035B5E7 /* Ringing.mp3 in Resources */,
+				A91504D82648FCC90035B5E7 /* Dialing.mp3 in Resources */,
+				A9C459252644D84E00F2B408 /* Main.storyboard in Resources */,
+				A91504D72648FCC90035B5E7 /* ConnectionRestored.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E1FCDA85971D9ACF17633B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundEffect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B487DADAF6B044E987AA0780 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoundEffect/Pods-SoundEffect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoundEffect/Pods-SoundEffect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoundEffect/Pods-SoundEffect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9C459162644D84E00F2B408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C459222644D84E00F2B408 /* CallViewController.swift in Sources */,
+				A9C4591E2644D84E00F2B408 /* AppDelegate.swift in Sources */,
+				A9C459322644FDEE00F2B408 /* AppDelegate.SoundEffect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9C459232644D84E00F2B408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C459242644D84E00F2B408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9C459282644D84F00F2B408 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C459292644D84F00F2B408 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9C4592C2644D84F00F2B408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9C4592D2644D84F00F2B408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9C4592F2644D84F00F2B408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FF34F30B06F5ABEB9D13B1 /* Pods-SoundEffect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SoundEffect/SoundEffect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM4A5PXTUX;
+				INFOPLIST_FILE = SoundEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart.example.soundeffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9C459302644D84F00F2B408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C20BF82C3D9364537DC16E2 /* Pods-SoundEffect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SoundEffect/SoundEffect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM4A5PXTUX;
+				INFOPLIST_FILE = SoundEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart.example.soundeffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9C459152644D84E00F2B408 /* Build configuration list for PBXProject "SoundEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C4592C2644D84F00F2B408 /* Debug */,
+				A9C4592D2644D84F00F2B408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C4592E2644D84F00F2B408 /* Build configuration list for PBXNativeTarget "SoundEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C4592F2644D84F00F2B408 /* Debug */,
+				A9C459302644D84F00F2B408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A91504CF2648F7CA0035B5E7 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9C459122644D84E00F2B408 /* Project object */;
+}
