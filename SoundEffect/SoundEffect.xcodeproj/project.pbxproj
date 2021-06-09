@@ -13,7 +13,7 @@
 		A91504D82648FCC90035B5E7 /* Dialing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91504D52648FCC90035B5E7 /* Dialing.mp3 */; };
 		A91504D92648FCC90035B5E7 /* Ringing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A91504D62648FCC90035B5E7 /* Ringing.mp3 */; };
 		A9C4591E2644D84E00F2B408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4591D2644D84E00F2B408 /* AppDelegate.swift */; };
-		A9C459222644D84E00F2B408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C459212644D84E00F2B408 /* ViewController.swift */; };
+		A9C459222644D84E00F2B408 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C459212644D84E00F2B408 /* CallViewController.swift */; };
 		A9C459252644D84E00F2B408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C459232644D84E00F2B408 /* Main.storyboard */; };
 		A9C459272644D84F00F2B408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C459262644D84F00F2B408 /* Assets.xcassets */; };
 		A9C4592A2644D84F00F2B408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C459282644D84F00F2B408 /* LaunchScreen.storyboard */; };
@@ -32,7 +32,7 @@
 		A91504DA264A0A250035B5E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9C4591A2644D84E00F2B408 /* SoundEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C4591D2644D84E00F2B408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9C459212644D84E00F2B408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9C459212644D84E00F2B408 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		A9C459242644D84E00F2B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9C459262644D84F00F2B408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C459292644D84F00F2B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				A91504D12648F81D0035B5E7 /* SoundEffect.entitlements */,
 				A9C4591D2644D84E00F2B408 /* AppDelegate.swift */,
 				A9C459312644FDEE00F2B408 /* AppDelegate.SoundEffect.swift */,
-				A9C459212644D84E00F2B408 /* ViewController.swift */,
+				A9C459212644D84E00F2B408 /* CallViewController.swift */,
 				A9C459232644D84E00F2B408 /* Main.storyboard */,
 				A9C459262644D84F00F2B408 /* Assets.xcassets */,
 				A9C459282644D84F00F2B408 /* LaunchScreen.storyboard */,
@@ -231,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C459222644D84E00F2B408 /* ViewController.swift in Sources */,
+				A9C459222644D84E00F2B408 /* CallViewController.swift in Sources */,
 				A9C4591E2644D84E00F2B408 /* AppDelegate.swift in Sources */,
 				A9C459322644FDEE00F2B408 /* AppDelegate.SoundEffect.swift in Sources */,
 			);
