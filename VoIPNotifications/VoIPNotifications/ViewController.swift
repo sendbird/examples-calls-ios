@@ -15,10 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var userIdTextField: UITextField!
     @IBOutlet weak var authenticateButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let callVC = segue.destination as? CallViewController,
               let call = sender as? DirectCall else { return }
@@ -34,6 +30,8 @@ class ViewController: UIViewController {
             SendBirdCall.authenticate(with: authenticateParams) { (user, error) in
                 guard let user = user, error == nil else { return }
                 
+                SendBirdCall.registerVoIPPush(token: UserDefaults.standard.voipPushToken, completionHandler: nil)
+                
                 self.userIdTextField.isHidden = true
                 self.authenticateButton.setTitle("Sign Out", for: .normal)
                 
@@ -42,6 +40,8 @@ class ViewController: UIViewController {
         } else {
             SendBirdCall.deauthenticate { (error) in
                 guard error == nil else { return }
+                
+                SendBirdCall.unregisterVoIPPush(token: UserDefaults.standard.voipPushToken, completionHandler: nil)
                 
                 self.userIdTextField.isHidden = false
                 self.authenticateButton.setTitle("Sign In", for: .normal)
@@ -62,10 +62,7 @@ class ViewController: UIViewController {
         )
         SendBirdCall.dial(with: dialParams) { (call, error) in
             guard let call = call, error == nil else { return }
-            
-            DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "dial", sender: call)
-            }
+            self.performSegue(withIdentifier: "dial", sender: call)
         }
     }
     

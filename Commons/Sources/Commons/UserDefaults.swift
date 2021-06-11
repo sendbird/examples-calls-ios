@@ -11,4 +11,9 @@ public extension UserDefaults {
         get { UserDefaults.standard.value(forKey: "com.sendbird.examples.pushtoken") as? Data }
         set { UserDefaults.standard.set(newValue, forKey: "com.sendbird.examples.pushtoken") }
     }
+    
+    var voipPushToken: Data? {
+        get { UserDefaults.standard.value(forKey: "com.sendbird.examples.voippushtoken") as? Data }
+        set { UserDefaults.standard.set(newValue, forKey: "com.sendbird.examples.voippushtoken") }
+    }
 }

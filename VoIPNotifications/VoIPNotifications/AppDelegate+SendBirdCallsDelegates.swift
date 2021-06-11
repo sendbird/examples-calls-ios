@@ -9,9 +9,7 @@ import UIKit
 import CallKit
 import SendBirdCalls
 
-// MARK: - Sendbird Calls Delegates
 extension AppDelegate: SendBirdCallDelegate, DirectCallDelegate {
-    // MARK: SendBirdCallDelegate
     // Handles incoming call. Please refer to `AppDelegate+VoIP.swift` file
     func didStartRinging(_ call: DirectCall) {
         call.delegate = self // To receive call event through `DirectCallDelegate`
@@ -25,9 +23,14 @@ extension AppDelegate: SendBirdCallDelegate, DirectCallDelegate {
         let update = CXCallUpdate()
         update.remoteHandle = CXHandle(type: .generic, value: name)
         update.hasVideo = call.isVideoCall
-        update.localizedCallerName = call.caller?.userId ?? "Unknown"
+        update.localizedCallerName = name
         
-        if SendBirdCall.getOngoingCallCount() > 1 {
+        if SendBirdCall.currentUser == nil {
+            CXCallManager.shared.reportIncomingCall(with: uuid, update: update) { _ in
+                CXCallManager.shared.endCall(for: uuid, endedAt: Date(), reason: .acceptFailed)
+            }
+            call.end()
+        } else if SendBirdCall.getOngoingCallCount() > 1 {
             // Allow only one ongoing call.
             CXCallManager.shared.reportIncomingCall(with: uuid, update: update) { _ in
                 CXCallManager.shared.endCall(for: uuid, endedAt: Date(), reason: .declined)
@@ -39,15 +42,13 @@ extension AppDelegate: SendBirdCallDelegate, DirectCallDelegate {
         }
     }
     
-    // MARK: DirectCallDelegate
-    func didConnect(_ call: DirectCall) { }
+    func didConnect(_ call: DirectCall) {
+        CXCallManager.shared.connectedCall(call)
+    }
     
     func didEnd(_ call: DirectCall) {
-        var callId: UUID = UUID()
-        if let callUUID = call.callUUID {
-            callId = callUUID
+        if let uuid = call.callUUID {
+            CXCallManager.shared.endCall(for: uuid, endedAt: Date(), reason: call.endResult)
         }
-        
-        CXCallManager.shared.endCall(for: callId, endedAt: Date(), reason: call.endResult)
     }
 }

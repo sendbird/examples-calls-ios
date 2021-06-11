@@ -10,11 +10,6 @@ import CallKit
 import PushKit
 import SendBirdCalls
 
-var versionInfo: String {
-    let sampleVersion = Bundle.main.version
-    return "QuickStart \(sampleVersion)   SDK \(SendBirdCall.sdkVersion)"
-}
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
@@ -23,27 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var voipRegistry: PKPushRegistry?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // MARK: SendBirdCall.configure(appId:)
-        // See [here](https://github.com/sendbird/quickstart-calls-ios#creating-a-sendbird-application) for the application ID.
-        // If you want to sign in with QR code, don't configure your app ID in code.
         
-        // Configure your app id here to designate a specific app id for the application. 
-        // let appId = YOUR_APP_ID
-        // SendBirdCall.configure(appId: appId)
-        // UserDefaults.standard.designatedAppId = appId
-
-        self.autoSignIn { error in
-            if error == nil { return }
-            // Show SignIn controller when failed to auto sign in
-            self.window?.rootViewController?.present(UIStoryboard.signController(), animated: true, completion: nil)
-        }
-        
-        // To process incoming call, you need to add `SendBirdCallDelegate` and implement its protocol methods.
-        SendBirdCall.addDelegate(self, identifier: "com.sendbird.calls.quickstart.delegate")
+        let appId: String = "Add6749c-9165-48e4-abeb-bf58f7c399df"
+        SendBirdCall.configure(appId: appId)
+        SendBirdCall.addDelegate(self, identifier: "AppDelegate")
         
         // To receive incoming call, you need to register VoIP push token
         self.voipRegistration()
-        self.addDirectCallSounds()
         
         return true
     }
@@ -69,45 +50,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // However, because iOS gives a limited time to perform remaining tasks,
         // There might be some calls failed to be ended
         // In this case, I recommend that you register local notification to notify the unterminated calls.
-    }
-    
-    // MARK: - SendBirdCall - Auto Sign In
-    func autoSignIn(completionHandler: @escaping (Error?) -> Void) {
-        // fetch credential
-        guard let pendingCredential = UserDefaults.standard.credential else {
-            DispatchQueue.main.async {
-                completionHandler(CredentialErrors.empty)
-            }
-            return
-        }
-        // authenticate
-        self.authenticate(with: pendingCredential, completionHandler: completionHandler)
-    }
-    
-    func authenticate(with credential: Credential, completionHandler: @escaping (Error?) -> Void) {
-        // Configure app ID before authenticate when the configured app ID is different.
-        if SendBirdCall.appId != credential.appId, UserDefaults.standard.designatedAppId == nil {
-            SendBirdCall.configure(appId: credential.appId)
-        }
-        
-        // Authenticate
-        let authParams = AuthenticateParams(userId: credential.userId, accessToken: credential.accessToken)
-        SendBirdCall.authenticate(with: authParams) { (user, error) in
-            guard user != nil else {
-                // Failed
-                DispatchQueue.main.async {
-                    completionHandler(error ?? CredentialErrors.unknown)
-                }
-                return
-            }
-            // Succeed
-            let credential = Credential(accessToken: credential.accessToken)
-            let credentialManager = CredentialManager.shared
-            credentialManager.updateCredential(credential)
-            
-            DispatchQueue.main.async {
-                completionHandler(nil)
-            }
-        }
     }
 }

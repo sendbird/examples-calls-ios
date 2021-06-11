@@ -3,49 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C6B9AD2676EA2B00ACB9D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C6B9AB2676EA2B00ACB9D9 /* Main.storyboard */; };
 		52FB1BC126733B0F00284E56 /* CXProvider+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B7626733B0E00284E56 /* CXProvider+QuickStart.swift */; };
 		52FB1BC226733B0F00284E56 /* CXCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B7726733B0E00284E56 /* CXCallManager.swift */; };
 		52FB1BC626733B0F00284E56 /* AppDelegate+VoIPPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B7D26733B0E00284E56 /* AppDelegate+VoIPPush.swift */; };
 		52FB1BCA26733B0F00284E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FB1B8226733B0E00284E56 /* Assets.xcassets */; };
-		52FB1BCB26733B0F00284E56 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8426733B0E00284E56 /* ImageCache.swift */; };
-		52FB1BCC26733B0F00284E56 /* String+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8526733B0E00284E56 /* String+QuickStart.swift */; };
-		52FB1BCD26733B0F00284E56 /* Int64+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8626733B0E00284E56 /* Int64+QuickStart.swift */; };
-		52FB1BCE26733B0F00284E56 /* UIButton+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8826733B0E00284E56 /* UIButton+QuickStart.swift */; };
-		52FB1BCF26733B0F00284E56 /* UIActivityIndicatorView+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8926733B0E00284E56 /* UIActivityIndicatorView+QuickStart.swift */; };
-		52FB1BD026733B0F00284E56 /* UITextView+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8A26733B0E00284E56 /* UITextView+QuickStart.swift */; };
-		52FB1BD126733B0F00284E56 /* UIViewController+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8B26733B0E00284E56 /* UIViewController+QuickStart.swift */; };
-		52FB1BD226733B0F00284E56 /* UIImageView+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8C26733B0E00284E56 /* UIImageView+QuickStart.swift */; };
-		52FB1BD326733B0F00284E56 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8D26733B0E00284E56 /* UIView+Extension.swift */; };
-		52FB1BD426733B0F00284E56 /* NSLayoutConstraint+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8E26733B0E00284E56 /* NSLayoutConstraint+QuickStart.swift */; };
-		52FB1BD526733B0F00284E56 /* UIColor+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B8F26733B0E00284E56 /* UIColor+QuickStart.swift */; };
-		52FB1BD626733B0F00284E56 /* UIImage+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9026733B0E00284E56 /* UIImage+QuickStart.swift */; };
-		52FB1BD726733B0F00284E56 /* UITabBarController+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9126733B0E00284E56 /* UITabBarController+QuickStart.swift */; };
 		52FB1BD826733B0F00284E56 /* UIApplication+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9226733B0E00284E56 /* UIApplication+QuickStart.swift */; };
-		52FB1BD926733B0F00284E56 /* UIStoryboard+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9326733B0E00284E56 /* UIStoryboard+QuickStart.swift */; };
-		52FB1BDA26733B0F00284E56 /* UITextField+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9426733B0E00284E56 /* UITextField+QuickStart.swift */; };
-		52FB1BDB26733B0F00284E56 /* NSUserActivity+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9626733B0E00284E56 /* NSUserActivity+QuickStart.swift */; };
-		52FB1BDC26733B0F00284E56 /* StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9726733B0E00284E56 /* StartCallConvertible.swift */; };
-		52FB1BDD26733B0F00284E56 /* UserDefaults+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9826733B0E00284E56 /* UserDefaults+QuickStart.swift */; };
-		52FB1BDE26733B0F00284E56 /* Data+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9926733B0E00284E56 /* Data+QuickStart.swift */; };
-		52FB1BDF26733B0F00284E56 /* Bundle+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9A26733B0E00284E56 /* Bundle+QuickStart.swift */; };
-		52FB1BE026733B0F00284E56 /* NotificationCenter+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9B26733B0E00284E56 /* NotificationCenter+QuickStart.swift */; };
 		52FB1BEB26733B0F00284E56 /* AppDelegate+SendBirdCallsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BA826733B0E00284E56 /* AppDelegate+SendBirdCallsDelegates.swift */; };
-		52FB1BEC26733B0F00284E56 /* SignInManuallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BAA26733B0E00284E56 /* SignInManuallyViewController.swift */; };
-		52FB1BED26733B0F00284E56 /* SignInWithQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BAB26733B0E00284E56 /* SignInWithQRViewController.swift */; };
-		52FB1BEE26733B0F00284E56 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BAC26733B0F00284E56 /* QRCodeViewController.swift */; };
-		52FB1BEF26733B0F00284E56 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BAD26733B0F00284E56 /* SignInViewController.swift */; };
-		52FB1BF026733B0F00284E56 /* CredentialErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BAF26733B0F00284E56 /* CredentialErrors.swift */; };
-		52FB1BF126733B0F00284E56 /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BB026733B0F00284E56 /* CredentialManager.swift */; };
-		52FB1BF226733B0F00284E56 /* CredentialDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BB126733B0F00284E56 /* CredentialDelegate.swift */; };
-		52FB1BF326733B0F00284E56 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BB226733B0F00284E56 /* Credential.swift */; };
-		52FB1BF526733B0F00284E56 /* SendBirdCall+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BB526733B0F00284E56 /* SendBirdCall+QuickStart.swift */; };
 		52FB1BF626733B0F00284E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FB1BB726733B0F00284E56 /* LaunchScreen.storyboard */; };
-		52FB1BF726733B0F00284E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FB1BB926733B0F00284E56 /* Main.storyboard */; };
 		52FB1BFC26733B0F00284E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BBF26733B0F00284E56 /* AppDelegate.swift */; };
+		52FB1C002673525900284E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BFE2673525900284E56 /* ViewController.swift */; };
+		52FB1C012673525900284E56 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BFF2673525900284E56 /* CallViewController.swift */; };
+		52FB1C0526735A9B00284E56 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = 52FB1C0426735A9B00284E56 /* Commons */; };
+		52FB1C0726735BCF00284E56 /* Ringing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52FB1C0626735BCF00284E56 /* Ringing.mp3 */; };
 		C1DD1FF923AFB59900140657 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E98EF823A0B2DE00842136 /* CallKit.framework */; };
 		C1DD1FFB23AFB59A00140657 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E98EF623A0B2DA00842136 /* PushKit.framework */; };
 		DCB35ED58E09BA675039BB71 /* libPods-VoIPNotifications.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C92A9035AD404FEA51A77C0D /* libPods-VoIPNotifications.a */; };
@@ -77,47 +51,20 @@
 /* Begin PBXFileReference section */
 		52A857AE26369A1F008C08CE /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = "../../WebRTC/signal-webrtc-ios/webrtc/src/out/WebRTC.xcframework"; sourceTree = "<group>"; };
 		52A857B426369A37008C08CE /* SendBirdCalls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SendBirdCalls.xcframework; path = "../../../../../Downloads/SendBirdCalls (12)/SendBirdCalls.xcframework"; sourceTree = "<group>"; };
+		52C6B9AC2676EA2B00ACB9D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52FB1B7626733B0E00284E56 /* CXProvider+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProvider+QuickStart.swift"; sourceTree = "<group>"; };
 		52FB1B7726733B0E00284E56 /* CXCallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXCallManager.swift; sourceTree = "<group>"; };
 		52FB1B7C26733B0E00284E56 /* VoIPNotifications.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = VoIPNotifications.entitlements; sourceTree = "<group>"; };
 		52FB1B7D26733B0E00284E56 /* AppDelegate+VoIPPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+VoIPPush.swift"; sourceTree = "<group>"; };
 		52FB1B8226733B0E00284E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52FB1B8426733B0E00284E56 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		52FB1B8526733B0E00284E56 /* String+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8626733B0E00284E56 /* Int64+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int64+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8826733B0E00284E56 /* UIButton+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8926733B0E00284E56 /* UIActivityIndicatorView+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8A26733B0E00284E56 /* UITextView+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8B26733B0E00284E56 /* UIViewController+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8C26733B0E00284E56 /* UIImageView+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8D26733B0E00284E56 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		52FB1B8E26733B0E00284E56 /* NSLayoutConstraint+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B8F26733B0E00284E56 /* UIColor+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9026733B0E00284E56 /* UIImage+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9126733B0E00284E56 /* UITabBarController+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+QuickStart.swift"; sourceTree = "<group>"; };
 		52FB1B9226733B0E00284E56 /* UIApplication+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9326733B0E00284E56 /* UIStoryboard+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9426733B0E00284E56 /* UITextField+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9626733B0E00284E56 /* NSUserActivity+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9726733B0E00284E56 /* StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCallConvertible.swift; sourceTree = "<group>"; };
-		52FB1B9826733B0E00284E56 /* UserDefaults+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9926733B0E00284E56 /* Data+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9A26733B0E00284E56 /* Bundle+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+QuickStart.swift"; sourceTree = "<group>"; };
-		52FB1B9B26733B0E00284E56 /* NotificationCenter+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+QuickStart.swift"; sourceTree = "<group>"; };
 		52FB1BA826733B0E00284E56 /* AppDelegate+SendBirdCallsDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SendBirdCallsDelegates.swift"; sourceTree = "<group>"; };
-		52FB1BAA26733B0E00284E56 /* SignInManuallyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInManuallyViewController.swift; sourceTree = "<group>"; };
-		52FB1BAB26733B0E00284E56 /* SignInWithQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithQRViewController.swift; sourceTree = "<group>"; };
-		52FB1BAC26733B0F00284E56 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
-		52FB1BAD26733B0F00284E56 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		52FB1BAF26733B0F00284E56 /* CredentialErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialErrors.swift; sourceTree = "<group>"; };
-		52FB1BB026733B0F00284E56 /* CredentialManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialManager.swift; sourceTree = "<group>"; };
-		52FB1BB126733B0F00284E56 /* CredentialDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialDelegate.swift; sourceTree = "<group>"; };
-		52FB1BB226733B0F00284E56 /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
-		52FB1BB526733B0F00284E56 /* SendBirdCall+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SendBirdCall+QuickStart.swift"; sourceTree = "<group>"; };
 		52FB1BB826733B0F00284E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		52FB1BBA26733B0F00284E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52FB1BBF26733B0F00284E56 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52FB1BC026733B0F00284E56 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FB1BFE2673525900284E56 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52FB1BFF2673525900284E56 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		52FB1C0626735BCF00284E56 /* Ringing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ringing.mp3; sourceTree = "<group>"; };
 		60087F9411EA5BCB603A21E1 /* Pods-VoIPNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoIPNotifications.release.xcconfig"; path = "Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications.release.xcconfig"; sourceTree = "<group>"; };
 		967690AD43D5814BD19218B8 /* Pods-VoIPNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoIPNotifications.debug.xcconfig"; path = "Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications.debug.xcconfig"; sourceTree = "<group>"; };
 		A9A72CA12387B448007C0878 /* Sendbird Calls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sendbird Calls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,24 +83,34 @@
 				C1DD1FF923AFB59900140657 /* CallKit.framework in Frameworks */,
 				C1DD1FFB23AFB59A00140657 /* PushKit.framework in Frameworks */,
 				DCB35ED58E09BA675039BB71 /* libPods-VoIPNotifications.a in Frameworks */,
+				52FB1C0526735A9B00284E56 /* Commons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52C6B9A82676E94800ACB9D9 /* CallKit */ = {
+			isa = PBXGroup;
+			children = (
+				52FB1B7D26733B0E00284E56 /* AppDelegate+VoIPPush.swift */,
+				52FB1B7726733B0E00284E56 /* CXCallManager.swift */,
+				52FB1B7626733B0E00284E56 /* CXProvider+QuickStart.swift */,
+			);
+			path = CallKit;
+			sourceTree = "<group>";
+		};
 		52FB1B7426733B0E00284E56 /* VoIPNotifications */ = {
 			isa = PBXGroup;
 			children = (
 				52FB1BBF26733B0F00284E56 /* AppDelegate.swift */,
 				52FB1BA826733B0E00284E56 /* AppDelegate+SendBirdCallsDelegates.swift */,
-				52FB1B7D26733B0E00284E56 /* AppDelegate+VoIPPush.swift */,
-				52FB1B7526733B0E00284E56 /* CXExtensions */,
-				52FB1B8326733B0E00284E56 /* Extensions */,
-				52FB1BA926733B0E00284E56 /* SignIn */,
-				52FB1BB426733B0F00284E56 /* SendBirdCallsExtenions */,
+				52FB1BFF2673525900284E56 /* CallViewController.swift */,
+				52FB1BFE2673525900284E56 /* ViewController.swift */,
+				52C6B9A82676E94800ACB9D9 /* CallKit */,
+				52FB1B8326733B0E00284E56 /* Misc */,
 				52FB1BB726733B0F00284E56 /* LaunchScreen.storyboard */,
-				52FB1BB926733B0F00284E56 /* Main.storyboard */,
+				52C6B9AB2676EA2B00ACB9D9 /* Main.storyboard */,
 				52FB1B8226733B0E00284E56 /* Assets.xcassets */,
 				52FB1BC026733B0F00284E56 /* Info.plist */,
 				52FB1B7C26733B0E00284E56 /* VoIPNotifications.entitlements */,
@@ -161,89 +118,13 @@
 			path = VoIPNotifications;
 			sourceTree = "<group>";
 		};
-		52FB1B7526733B0E00284E56 /* CXExtensions */ = {
+		52FB1B8326733B0E00284E56 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				52FB1B7626733B0E00284E56 /* CXProvider+QuickStart.swift */,
-				52FB1B7726733B0E00284E56 /* CXCallManager.swift */,
-			);
-			path = CXExtensions;
-			sourceTree = "<group>";
-		};
-		52FB1B8326733B0E00284E56 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				52FB1B8426733B0E00284E56 /* ImageCache.swift */,
-				52FB1B8526733B0E00284E56 /* String+QuickStart.swift */,
-				52FB1B8626733B0E00284E56 /* Int64+QuickStart.swift */,
-				52FB1B8726733B0E00284E56 /* UIKit */,
-				52FB1B9526733B0E00284E56 /* Intent */,
-				52FB1B9826733B0E00284E56 /* UserDefaults+QuickStart.swift */,
-				52FB1B9926733B0E00284E56 /* Data+QuickStart.swift */,
-				52FB1B9A26733B0E00284E56 /* Bundle+QuickStart.swift */,
-				52FB1B9B26733B0E00284E56 /* NotificationCenter+QuickStart.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		52FB1B8726733B0E00284E56 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				52FB1B8826733B0E00284E56 /* UIButton+QuickStart.swift */,
-				52FB1B8926733B0E00284E56 /* UIActivityIndicatorView+QuickStart.swift */,
-				52FB1B8A26733B0E00284E56 /* UITextView+QuickStart.swift */,
-				52FB1B8B26733B0E00284E56 /* UIViewController+QuickStart.swift */,
-				52FB1B8C26733B0E00284E56 /* UIImageView+QuickStart.swift */,
-				52FB1B8D26733B0E00284E56 /* UIView+Extension.swift */,
-				52FB1B8E26733B0E00284E56 /* NSLayoutConstraint+QuickStart.swift */,
-				52FB1B8F26733B0E00284E56 /* UIColor+QuickStart.swift */,
-				52FB1B9026733B0E00284E56 /* UIImage+QuickStart.swift */,
-				52FB1B9126733B0E00284E56 /* UITabBarController+QuickStart.swift */,
+				52FB1C0626735BCF00284E56 /* Ringing.mp3 */,
 				52FB1B9226733B0E00284E56 /* UIApplication+QuickStart.swift */,
-				52FB1B9326733B0E00284E56 /* UIStoryboard+QuickStart.swift */,
-				52FB1B9426733B0E00284E56 /* UITextField+QuickStart.swift */,
 			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		52FB1B9526733B0E00284E56 /* Intent */ = {
-			isa = PBXGroup;
-			children = (
-				52FB1B9626733B0E00284E56 /* NSUserActivity+QuickStart.swift */,
-				52FB1B9726733B0E00284E56 /* StartCallConvertible.swift */,
-			);
-			path = Intent;
-			sourceTree = "<group>";
-		};
-		52FB1BA926733B0E00284E56 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				52FB1BAA26733B0E00284E56 /* SignInManuallyViewController.swift */,
-				52FB1BAB26733B0E00284E56 /* SignInWithQRViewController.swift */,
-				52FB1BAC26733B0F00284E56 /* QRCodeViewController.swift */,
-				52FB1BAD26733B0F00284E56 /* SignInViewController.swift */,
-				52FB1BAE26733B0F00284E56 /* Credentials */,
-			);
-			path = SignIn;
-			sourceTree = "<group>";
-		};
-		52FB1BAE26733B0F00284E56 /* Credentials */ = {
-			isa = PBXGroup;
-			children = (
-				52FB1BAF26733B0F00284E56 /* CredentialErrors.swift */,
-				52FB1BB026733B0F00284E56 /* CredentialManager.swift */,
-				52FB1BB126733B0F00284E56 /* CredentialDelegate.swift */,
-				52FB1BB226733B0F00284E56 /* Credential.swift */,
-			);
-			path = Credentials;
-			sourceTree = "<group>";
-		};
-		52FB1BB426733B0F00284E56 /* SendBirdCallsExtenions */ = {
-			isa = PBXGroup;
-			children = (
-				52FB1BB526733B0F00284E56 /* SendBirdCall+QuickStart.swift */,
-			);
-			path = SendBirdCallsExtenions;
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		5C25A70F227497174BD3A1B6 /* Pods */ = {
@@ -300,7 +181,6 @@
 				A9A72C9E2387B448007C0878 /* Frameworks */,
 				A9A72C9F2387B448007C0878 /* Resources */,
 				A9B75658243DBA77001E764B /* Embed App Extensions */,
-				52C8C6C324A98A5C0057F89D /* Integrate SwftLint */,
 				52A857D42636A2DC008C08CE /* Embed Frameworks */,
 				01E22FBE84E2C453D6717975 /* [CP] Embed Pods Frameworks */,
 			);
@@ -309,6 +189,9 @@
 			dependencies = (
 			);
 			name = VoIPNotifications;
+			packageProductDependencies = (
+				52FB1C0426735A9B00284E56 /* Commons */,
+			);
 			productName = "SendBirdCall Tester";
 			productReference = A9A72CA12387B448007C0878 /* Sendbird Calls.app */;
 			productType = "com.apple.product-type.application";
@@ -351,9 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FB1BF726733B0F00284E56 /* Main.storyboard in Resources */,
 				52FB1BCA26733B0F00284E56 /* Assets.xcassets in Resources */,
 				52FB1BF626733B0F00284E56 /* LaunchScreen.storyboard in Resources */,
+				52FB1C0726735BCF00284E56 /* Ringing.mp3 in Resources */,
+				52C6B9AD2676EA2B00ACB9D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,24 +260,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		52C8C6C324A98A5C0057F89D /* Integrate SwftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Integrate SwftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		F4B5252EE8EEBB0308FED2F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -424,62 +290,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FB1BCD26733B0F00284E56 /* Int64+QuickStart.swift in Sources */,
-				52FB1BCB26733B0F00284E56 /* ImageCache.swift in Sources */,
-				52FB1BED26733B0F00284E56 /* SignInWithQRViewController.swift in Sources */,
 				52FB1BD826733B0F00284E56 /* UIApplication+QuickStart.swift in Sources */,
-				52FB1BDE26733B0F00284E56 /* Data+QuickStart.swift in Sources */,
-				52FB1BD726733B0F00284E56 /* UITabBarController+QuickStart.swift in Sources */,
-				52FB1BDC26733B0F00284E56 /* StartCallConvertible.swift in Sources */,
-				52FB1BCC26733B0F00284E56 /* String+QuickStart.swift in Sources */,
-				52FB1BDB26733B0F00284E56 /* NSUserActivity+QuickStart.swift in Sources */,
+				52FB1C012673525900284E56 /* CallViewController.swift in Sources */,
 				52FB1BEB26733B0F00284E56 /* AppDelegate+SendBirdCallsDelegates.swift in Sources */,
-				52FB1BEF26733B0F00284E56 /* SignInViewController.swift in Sources */,
-				52FB1BDD26733B0F00284E56 /* UserDefaults+QuickStart.swift in Sources */,
 				52FB1BC626733B0F00284E56 /* AppDelegate+VoIPPush.swift in Sources */,
-				52FB1BD226733B0F00284E56 /* UIImageView+QuickStart.swift in Sources */,
-				52FB1BD026733B0F00284E56 /* UITextView+QuickStart.swift in Sources */,
-				52FB1BE026733B0F00284E56 /* NotificationCenter+QuickStart.swift in Sources */,
-				52FB1BF226733B0F00284E56 /* CredentialDelegate.swift in Sources */,
-				52FB1BDA26733B0F00284E56 /* UITextField+QuickStart.swift in Sources */,
-				52FB1BD626733B0F00284E56 /* UIImage+QuickStart.swift in Sources */,
 				52FB1BFC26733B0F00284E56 /* AppDelegate.swift in Sources */,
-				52FB1BF126733B0F00284E56 /* CredentialManager.swift in Sources */,
-				52FB1BF326733B0F00284E56 /* Credential.swift in Sources */,
 				52FB1BC226733B0F00284E56 /* CXCallManager.swift in Sources */,
-				52FB1BCF26733B0F00284E56 /* UIActivityIndicatorView+QuickStart.swift in Sources */,
-				52FB1BF526733B0F00284E56 /* SendBirdCall+QuickStart.swift in Sources */,
-				52FB1BD326733B0F00284E56 /* UIView+Extension.swift in Sources */,
-				52FB1BCE26733B0F00284E56 /* UIButton+QuickStart.swift in Sources */,
-				52FB1BD526733B0F00284E56 /* UIColor+QuickStart.swift in Sources */,
+				52FB1C002673525900284E56 /* ViewController.swift in Sources */,
 				52FB1BC126733B0F00284E56 /* CXProvider+QuickStart.swift in Sources */,
-				52FB1BEE26733B0F00284E56 /* QRCodeViewController.swift in Sources */,
-				52FB1BDF26733B0F00284E56 /* Bundle+QuickStart.swift in Sources */,
-				52FB1BD126733B0F00284E56 /* UIViewController+QuickStart.swift in Sources */,
-				52FB1BF026733B0F00284E56 /* CredentialErrors.swift in Sources */,
-				52FB1BEC26733B0F00284E56 /* SignInManuallyViewController.swift in Sources */,
-				52FB1BD926733B0F00284E56 /* UIStoryboard+QuickStart.swift in Sources */,
-				52FB1BD426733B0F00284E56 /* NSLayoutConstraint+QuickStart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		52C6B9AB2676EA2B00ACB9D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C6B9AC2676EA2B00ACB9D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		52FB1BB726733B0F00284E56 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				52FB1BB826733B0F00284E56 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		52FB1BB926733B0F00284E56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52FB1BBA26733B0F00284E56 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -619,7 +457,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/VoIPNotifications/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,7 +487,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/VoIPNotifications/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,6 +524,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52FB1C0426735A9B00284E56 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9A72C992387B448007C0878 /* Project object */;
 }

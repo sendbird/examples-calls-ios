@@ -1,8 +1,8 @@
 //
 //  CallViewController.swift
-//  LocalViewControl
+//  MediaControl
 //
-//  Created by Minhyuk Kim on 2021/06/11.
+//  Created by Jaesung Lee on 2021/05/17.
 //
 
 import UIKit
@@ -14,9 +14,13 @@ class CallViewController: UIViewController {
     var call: DirectCall!
     
     @IBOutlet weak var localVideoView: UIView!
+    @IBOutlet weak var micButton: UIButton!
+    @IBOutlet weak var videoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CXCallManager.shared.delegate = self
         
         let remoteView = SendBirdVideoView(frame: self.view.frame)
         view.embed(remoteView)
@@ -29,32 +33,27 @@ class CallViewController: UIViewController {
         call.delegate = self
         
         call.startVideo()
-        
-        self.mirrorLocalVideoView()
     }
     
-    @IBAction func flipCamera(_ sender: Any) {
-        self.call.switchCamera { error in
-            guard error == nil else {
-                print("Failed to switch video device \(error?.localizedDescription ?? "")")
-                return
-            }
-            
-            UIView.transition(with: self.localVideoView, duration: 1, options: .transitionFlipFromRight, animations: {
-                UIView.performWithoutAnimation {
-                    self.mirrorLocalVideoView(isEnabled: self.call.currentVideoDevice?.position == .front)
-                }
-            })
-        }
+    @IBAction func didTapMic() {
+        self.didChangeAudioStatus(callId: call.callId, isEnabled: !call.isLocalAudioEnabled)
+        CXCallManager.shared.updateCall(call)
     }
     
-    /// This method mirros the SendBirdVideoView of the local video view.
-    func mirrorLocalVideoView(isEnabled: Bool = true) {
-        guard let localSBView = self.localVideoView?.subviews.first else { return }
-        switch isEnabled {
-        case true: localSBView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
-        case false: localSBView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+    @IBAction func didTapVideo() {
+        if call.isLocalVideoEnabled {
+            call.stopVideo()
+        } else {
+            call.startVideo()
         }
+        videoButton.setImage(
+            UIImage(
+                systemName: call.isLocalVideoEnabled
+                    ? "video.slash.fill"
+                    : "video.fill"
+            ),
+            for: .normal
+        )
     }
     
     @IBAction func didTapEndCall() {
@@ -62,6 +61,25 @@ class CallViewController: UIViewController {
     }
 }
 
+extension CallViewController: CXCallManagerDelegate {
+    func didChangeAudioStatus(callId: String, isEnabled: Bool) {
+        guard callId == self.call.callId else { return }
+        
+        if isEnabled {
+            call.unmuteMicrophone()
+        } else {
+            call.muteMicrophone()
+        }
+        micButton.setImage(
+            UIImage(
+                systemName: call.isLocalAudioEnabled
+                    ? "mic.slash.fill"
+                    : "mic.fill"
+            ),
+            for: .normal
+        )
+    }
+}
 extension CallViewController: DirectCallDelegate {
     func didConnect(_ call: DirectCall) {
         print("Call Connected")

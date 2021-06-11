@@ -54,3 +54,6 @@ Examples in this repository use basic Remote Notifications to receive an incomin
 
 ### [Call History Example](https://github.com/sendbird/examples-calls-ios/tree/main/CallHistory)
 `CallHistory` project contains implementation of querying and displaying call history using DirectCallLogListQuery. 
+
+### [VoIP Notification Example](https://github.com/sendbird/examples-calls-ios/tree/main/VoIPNotifications)
+`VoIPNotifications` project contains implementation of integrating Apple's CallKit with SendBirdCalls.
