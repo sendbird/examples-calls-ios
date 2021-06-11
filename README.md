@@ -42,3 +42,12 @@ Examples in this repository use basic Remote Notifications to receive an incomin
 
 ### [ScreenShare Example](https://github.com/sendbird/examples-calls-ios/tree/main/ScreenShare)
 `ScreenShare` project contains implementation of sharing local screen with the remote user while making a DirectCall. This sample uses Apple's `ReplayKit` to capture and share the app's screen.  
+
+### [Sound Effect Example](https://github.com/sendbird/examples-calls-ios/tree/main/SoundEffect)
+`SoundEffect` project contains implementation of configuring different sound effects for Direct Call. 
+
+### [Media Control Example](https://github.com/sendbird/examples-calls-ios/tree/main/MediaControl)
+`MediaControl` project contains implementation of toggling audio / video status while making a DirectCall. 
+
+### [Call History Example](https://github.com/sendbird/examples-calls-ios/tree/main/CallHistory)
+`CallHistory` project contains implementation of querying and displaying call history using DirectCallLogListQuery. 
