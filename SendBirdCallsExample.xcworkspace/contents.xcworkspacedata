@@ -23,9 +23,12 @@
       location = "group:MediaControl/MediaControl.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:CallHistory/CallHistory.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CallHistory/CallHistory.xcodeproj">
+      location = "group:LocalViewControl/LocalViewControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
