@@ -45,3 +45,12 @@ Examples in this repository use basic Remote Notifications to receive an incomin
 
 ### [LocalViewControl Example](https://github.com/sendbird/examples-calls-ios/tree/main/LocalViewControl)
 `LocalViewControl` project contains implementation of switching camera device and mirroring local videoView while making a DirectCall.   
+
+### [Sound Effect Example](https://github.com/sendbird/examples-calls-ios/tree/main/SoundEffect)
+`SoundEffect` project contains implementation of configuring different sound effects for Direct Call. 
+
+### [Media Control Example](https://github.com/sendbird/examples-calls-ios/tree/main/MediaControl)
+`MediaControl` project contains implementation of toggling audio / video status while making a DirectCall. 
+
+### [Call History Example](https://github.com/sendbird/examples-calls-ios/tree/main/CallHistory)
+`CallHistory` project contains implementation of querying and displaying call history using DirectCallLogListQuery. 
