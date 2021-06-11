@@ -9,6 +9,7 @@ project 'MediaControl/MediaControl.xcodeproj'
 project 'CallHistory/CallHistory.xcodeproj'
 project 'SoundEffect/SoundEffect.xcodeproj'
 project 'LocalViewControl/LocalViewControl.xcodeproj'
+project 'AutoAnswer/AutoAnswer.xcodeproj'
 
 target 'BaseSample' do
     project 'BaseSample/BaseSample.xcodeproj'
@@ -47,5 +48,10 @@ end
 
 target 'LocalViewControl' do
     project 'LocalViewControl/LocalViewControl.xcodeproj'
+    pod 'SendBirdCalls'
+end
+
+target 'AutoAnswer' do
+    project 'AutoAnswer/AutoAnswer.xcodeproj'
     pod 'SendBirdCalls'
 end
