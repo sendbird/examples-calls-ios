@@ -29,6 +29,9 @@
       location = "group:LocalViewControl/LocalViewControl.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:VoIPNotifications/VoIPNotifications.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
