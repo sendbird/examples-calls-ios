@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C6B9AD2676EA2B00ACB9D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C6B9AB2676EA2B00ACB9D9 /* Main.storyboard */; };
+		52FB1BC126733B0F00284E56 /* CXProvider+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B7626733B0E00284E56 /* CXProvider+QuickStart.swift */; };
+		52FB1BC226733B0F00284E56 /* CXCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B7726733B0E00284E56 /* CXCallManager.swift */; };
+		52FB1BC626733B0F00284E56 /* AppDelegate+VoIPPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B7D26733B0E00284E56 /* AppDelegate+VoIPPush.swift */; };
+		52FB1BCA26733B0F00284E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FB1B8226733B0E00284E56 /* Assets.xcassets */; };
+		52FB1BD826733B0F00284E56 /* UIApplication+QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1B9226733B0E00284E56 /* UIApplication+QuickStart.swift */; };
+		52FB1BEB26733B0F00284E56 /* AppDelegate+SendBirdCallsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BA826733B0E00284E56 /* AppDelegate+SendBirdCallsDelegates.swift */; };
+		52FB1BF626733B0F00284E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FB1BB726733B0F00284E56 /* LaunchScreen.storyboard */; };
+		52FB1BFC26733B0F00284E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BBF26733B0F00284E56 /* AppDelegate.swift */; };
+		52FB1C002673525900284E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BFE2673525900284E56 /* ViewController.swift */; };
+		52FB1C012673525900284E56 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1BFF2673525900284E56 /* CallViewController.swift */; };
+		52FB1C0526735A9B00284E56 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = 52FB1C0426735A9B00284E56 /* Commons */; };
+		52FB1C0726735BCF00284E56 /* Ringing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52FB1C0626735BCF00284E56 /* Ringing.mp3 */; };
+		C1DD1FF923AFB59900140657 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E98EF823A0B2DE00842136 /* CallKit.framework */; };
+		C1DD1FFB23AFB59A00140657 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E98EF623A0B2DA00842136 /* PushKit.framework */; };
+		DCB35ED58E09BA675039BB71 /* libPods-VoIPNotifications.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C92A9035AD404FEA51A77C0D /* libPods-VoIPNotifications.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52A857D42636A2DC008C08CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B75658243DBA77001E764B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52A857AE26369A1F008C08CE /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = "../../WebRTC/signal-webrtc-ios/webrtc/src/out/WebRTC.xcframework"; sourceTree = "<group>"; };
+		52A857B426369A37008C08CE /* SendBirdCalls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SendBirdCalls.xcframework; path = "../../../../../Downloads/SendBirdCalls (12)/SendBirdCalls.xcframework"; sourceTree = "<group>"; };
+		52C6B9AC2676EA2B00ACB9D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52FB1B7626733B0E00284E56 /* CXProvider+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProvider+QuickStart.swift"; sourceTree = "<group>"; };
+		52FB1B7726733B0E00284E56 /* CXCallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXCallManager.swift; sourceTree = "<group>"; };
+		52FB1B7C26733B0E00284E56 /* VoIPNotifications.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = VoIPNotifications.entitlements; sourceTree = "<group>"; };
+		52FB1B7D26733B0E00284E56 /* AppDelegate+VoIPPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+VoIPPush.swift"; sourceTree = "<group>"; };
+		52FB1B8226733B0E00284E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FB1B9226733B0E00284E56 /* UIApplication+QuickStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+QuickStart.swift"; sourceTree = "<group>"; };
+		52FB1BA826733B0E00284E56 /* AppDelegate+SendBirdCallsDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SendBirdCallsDelegates.swift"; sourceTree = "<group>"; };
+		52FB1BB826733B0F00284E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52FB1BBF26733B0F00284E56 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52FB1BC026733B0F00284E56 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FB1BFE2673525900284E56 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52FB1BFF2673525900284E56 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		52FB1C0626735BCF00284E56 /* Ringing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ringing.mp3; sourceTree = "<group>"; };
+		60087F9411EA5BCB603A21E1 /* Pods-VoIPNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoIPNotifications.release.xcconfig"; path = "Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications.release.xcconfig"; sourceTree = "<group>"; };
+		967690AD43D5814BD19218B8 /* Pods-VoIPNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoIPNotifications.debug.xcconfig"; path = "Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications.debug.xcconfig"; sourceTree = "<group>"; };
+		A9A72CA12387B448007C0878 /* Sendbird Calls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sendbird Calls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E98EF623A0B2DA00842136 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		A9E98EF823A0B2DE00842136 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		C1E1B36823AD3D9D00275F8B /* SendBirdCalls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SendBirdCalls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E1B36D23AD3E5400275F8B /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		C92A9035AD404FEA51A77C0D /* libPods-VoIPNotifications.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoIPNotifications.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9A72C9E2387B448007C0878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DD1FF923AFB59900140657 /* CallKit.framework in Frameworks */,
+				C1DD1FFB23AFB59A00140657 /* PushKit.framework in Frameworks */,
+				DCB35ED58E09BA675039BB71 /* libPods-VoIPNotifications.a in Frameworks */,
+				52FB1C0526735A9B00284E56 /* Commons in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C6B9A82676E94800ACB9D9 /* CallKit */ = {
+			isa = PBXGroup;
+			children = (
+				52FB1B7D26733B0E00284E56 /* AppDelegate+VoIPPush.swift */,
+				52FB1B7726733B0E00284E56 /* CXCallManager.swift */,
+				52FB1B7626733B0E00284E56 /* CXProvider+QuickStart.swift */,
+			);
+			path = CallKit;
+			sourceTree = "<group>";
+		};
+		52FB1B7426733B0E00284E56 /* VoIPNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				52FB1BBF26733B0F00284E56 /* AppDelegate.swift */,
+				52FB1BA826733B0E00284E56 /* AppDelegate+SendBirdCallsDelegates.swift */,
+				52FB1BFF2673525900284E56 /* CallViewController.swift */,
+				52FB1BFE2673525900284E56 /* ViewController.swift */,
+				52C6B9A82676E94800ACB9D9 /* CallKit */,
+				52FB1B8326733B0E00284E56 /* Misc */,
+				52FB1BB726733B0F00284E56 /* LaunchScreen.storyboard */,
+				52C6B9AB2676EA2B00ACB9D9 /* Main.storyboard */,
+				52FB1B8226733B0E00284E56 /* Assets.xcassets */,
+				52FB1BC026733B0F00284E56 /* Info.plist */,
+				52FB1B7C26733B0E00284E56 /* VoIPNotifications.entitlements */,
+			);
+			path = VoIPNotifications;
+			sourceTree = "<group>";
+		};
+		52FB1B8326733B0E00284E56 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				52FB1C0626735BCF00284E56 /* Ringing.mp3 */,
+				52FB1B9226733B0E00284E56 /* UIApplication+QuickStart.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		5C25A70F227497174BD3A1B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				967690AD43D5814BD19218B8 /* Pods-VoIPNotifications.debug.xcconfig */,
+				60087F9411EA5BCB603A21E1 /* Pods-VoIPNotifications.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		A956476D23964EF20086A33C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52A857B426369A37008C08CE /* SendBirdCalls.xcframework */,
+				52A857AE26369A1F008C08CE /* WebRTC.xcframework */,
+				C1E1B36D23AD3E5400275F8B /* WebRTC.framework */,
+				C1E1B36823AD3D9D00275F8B /* SendBirdCalls.framework */,
+				A9E98EF823A0B2DE00842136 /* CallKit.framework */,
+				A9E98EF623A0B2DA00842136 /* PushKit.framework */,
+				C92A9035AD404FEA51A77C0D /* libPods-VoIPNotifications.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9A72C982387B448007C0878 = {
+			isa = PBXGroup;
+			children = (
+				52FB1B7426733B0E00284E56 /* VoIPNotifications */,
+				A9A72CA22387B448007C0878 /* Products */,
+				A956476D23964EF20086A33C /* Frameworks */,
+				5C25A70F227497174BD3A1B6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A9A72CA22387B448007C0878 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9A72CA12387B448007C0878 /* Sendbird Calls.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9A72CA02387B448007C0878 /* VoIPNotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A72CB52387B44C007C0878 /* Build configuration list for PBXNativeTarget "VoIPNotifications" */;
+			buildPhases = (
+				F4B5252EE8EEBB0308FED2F0 /* [CP] Check Pods Manifest.lock */,
+				A9A72C9D2387B448007C0878 /* Sources */,
+				A9A72C9E2387B448007C0878 /* Frameworks */,
+				A9A72C9F2387B448007C0878 /* Resources */,
+				A9B75658243DBA77001E764B /* Embed App Extensions */,
+				52A857D42636A2DC008C08CE /* Embed Frameworks */,
+				01E22FBE84E2C453D6717975 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoIPNotifications;
+			packageProductDependencies = (
+				52FB1C0426735A9B00284E56 /* Commons */,
+			);
+			productName = "SendBirdCall Tester";
+			productReference = A9A72CA12387B448007C0878 /* Sendbird Calls.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9A72C992387B448007C0878 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "SendBird Inc.";
+				TargetAttributes = {
+					A9A72CA02387B448007C0878 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = A9A72C9C2387B448007C0878 /* Build configuration list for PBXProject "VoIPNotifications" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9A72C982387B448007C0878;
+			productRefGroup = A9A72CA22387B448007C0878 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9A72CA02387B448007C0878 /* VoIPNotifications */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9A72C9F2387B448007C0878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FB1BCA26733B0F00284E56 /* Assets.xcassets in Resources */,
+				52FB1BF626733B0F00284E56 /* LaunchScreen.storyboard in Resources */,
+				52FB1C0726735BCF00284E56 /* Ringing.mp3 in Resources */,
+				52C6B9AD2676EA2B00ACB9D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E22FBE84E2C453D6717975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoIPNotifications/Pods-VoIPNotifications-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B5252EE8EEBB0308FED2F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoIPNotifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9A72C9D2387B448007C0878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FB1BD826733B0F00284E56 /* UIApplication+QuickStart.swift in Sources */,
+				52FB1C012673525900284E56 /* CallViewController.swift in Sources */,
+				52FB1BEB26733B0F00284E56 /* AppDelegate+SendBirdCallsDelegates.swift in Sources */,
+				52FB1BC626733B0F00284E56 /* AppDelegate+VoIPPush.swift in Sources */,
+				52FB1BFC26733B0F00284E56 /* AppDelegate.swift in Sources */,
+				52FB1BC226733B0F00284E56 /* CXCallManager.swift in Sources */,
+				52FB1C002673525900284E56 /* ViewController.swift in Sources */,
+				52FB1BC126733B0F00284E56 /* CXProvider+QuickStart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52C6B9AB2676EA2B00ACB9D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C6B9AC2676EA2B00ACB9D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52FB1BB726733B0F00284E56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FB1BB826733B0F00284E56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9A72CB32387B44C007C0878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9A72CB42387B44C007C0878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9A72CB62387B44C007C0878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967690AD43D5814BD19218B8 /* Pods-VoIPNotifications.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoIPNotifications/VoIPNotifications.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RM4A5PXTUX;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/VoIPNotifications/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
+				PRODUCT_NAME = "Sendbird Calls";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A9A72CB72387B44C007C0878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60087F9411EA5BCB603A21E1 /* Pods-VoIPNotifications.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoIPNotifications/VoIPNotifications.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RM4A5PXTUX;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/VoIPNotifications/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.calls.quickstart;
+				PRODUCT_NAME = "Sendbird Calls";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9A72C9C2387B448007C0878 /* Build configuration list for PBXProject "VoIPNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A72CB32387B44C007C0878 /* Debug */,
+				A9A72CB42387B44C007C0878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A72CB52387B44C007C0878 /* Build configuration list for PBXNativeTarget "VoIPNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A72CB62387B44C007C0878 /* Debug */,
+				A9A72CB72387B44C007C0878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52FB1C0426735A9B00284E56 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9A72C992387B448007C0878 /* Project object */;
+}
