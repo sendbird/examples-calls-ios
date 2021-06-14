@@ -57,3 +57,6 @@ Examples in this repository use basic Remote Notifications to receive an incomin
 
 ### [VoIP Notification Example](https://github.com/sendbird/examples-calls-ios/tree/main/VoIPNotifications)
 `VoIPNotifications` project contains implementation of integrating Apple's CallKit with SendBirdCalls.
+
+### [Auto Answer Example](https://github.com/sendbird/examples-calls-ios/tree/main/AutoAnswer)
+`AutoAnswer` project contains implementation of automatically handling incoming Direct Calls.

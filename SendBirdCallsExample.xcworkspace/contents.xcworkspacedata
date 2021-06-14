@@ -32,6 +32,9 @@
       location = "group:VoIPNotifications/VoIPNotifications.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:AutoAnswer/AutoAnswer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
