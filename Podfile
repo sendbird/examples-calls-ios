@@ -12,6 +12,7 @@ project 'LocalViewControl/LocalViewControl.xcodeproj'
 project 'VoIPNotifications/VoIPNotifications.xcodeproj'
 project 'AutoAnswer/AutoAnswer.xcodeproj'
 project 'SwiftUIBasic/SwiftUIBasic.xcodeproj'
+project 'HoldAndResume/HoldAndResume.xcodeproj'
 
 target 'BaseSample' do
     project 'BaseSample/BaseSample.xcodeproj'
@@ -68,3 +69,7 @@ target 'SwiftUIBasic' do
     pod 'SendBirdCalls'
 end
 
+target 'HoldAndResume' do
+    project 'HoldAndResume/HoldAndResume.xcodeproj'
+    pod 'SendBirdCalls'
+end

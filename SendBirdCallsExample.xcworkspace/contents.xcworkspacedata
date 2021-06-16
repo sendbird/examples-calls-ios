@@ -38,6 +38,9 @@
       location = "group:SwiftUIBasic/SwiftUIBasic.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:HoldAndResume/HoldAndResume.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
