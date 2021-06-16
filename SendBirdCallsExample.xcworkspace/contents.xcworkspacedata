@@ -11,10 +11,28 @@
       location = "group:ScreenCapture/ScreenCapture.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SoundEffect/SoundEffect.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ScreenShare/ScreenShare.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ScreenRecord/ScreenRecord.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MediaControl/MediaControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CallHistory/CallHistory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalViewControl/LocalViewControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VoIPNotifications/VoIPNotifications.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoAnswer/AutoAnswer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SwiftUIBasic/SwiftUIBasic.xcodeproj">
