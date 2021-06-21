@@ -12,31 +12,34 @@ import SendBirdCalls
 class AuthenticationViewModel: ObservableObject {
     @Published var userID: String = ""
     @Published var accessToken: String = ""
-    @Published var error: String = ""
     @Published var authRequired: Bool = true
     
     var currentUser: User? { SendBirdCall.currentUser }
     
     func authenticate() {
+        /// 1. Create `AuthenticateParams`
         let authParams = AuthenticateParams(
             userId: userID,
             accessToken: accessToken.isEmpty ? nil : accessToken
         )
         
+        /// 2. Authenticate with the pararms
         SendBirdCall.authenticate(with: authParams) { [self] user, error in
             if let error = error {
-                self.error = error.localizedDescription
+                print(error.localizedDescription)
                 return
             }
+            /// 3. Dismiss AuthViewf
             authRequired = false
             SendBirdCall.registerRemotePush(token: UserDefaults.standard.remotePushToken, completionHandler: nil)
         }
     }
     
     func deauthenticate() {
+        /// 1. deauthenticate
         SendBirdCall.deauthenticate { [self] error in
             if let error = error {
-                self.error = error.localizedDescription
+                print(error.localizedDescription)
                 return
             }
             authRequired = true

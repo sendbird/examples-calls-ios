@@ -20,12 +20,12 @@ class DirectCallViewModel: ObservableObject {
     }
     
     @Published var calleeID: String = ""
-    @Published var error: String = ""
     @Published var callState: CallState = .none
     
     var call: DirectCall?
     
     func dial() {
+        /// 1. create `CallOptions` object
         let callOptions = CallOptions(
             isAudioEnabled: true,
             isVideoEnabled: false,
@@ -34,25 +34,30 @@ class DirectCallViewModel: ObservableObject {
             useFrontCamera: true
         )
         
+        /// 2. create `DialParams` object.
         let dialParams = DialParams(
             calleeId: calleeID,
             isVideoCall: false,
             callOptions: callOptions,
             customItems: [:]
         )
-        // TODO: Convert to Combine
+        /// 3. dial with `DialParams`
         SendBirdCall.dial(with: dialParams) { [self] (call, error) in
-            call?.delegate = self
-            self.call = call
-            if let error = error {
-                self.error = error.localizedDescription
-            } else{
-                callState = .onDialing
+            /// 4. error handling
+            guard let call = call else {
+                print(error?.localizedDescription ?? "unknown error")
             }
+            /// 5. set `DirectCallDelegate`
+            call.delegate = self
+            /// 6. set `self.call`
+            self.call = call
+            /// 7. update call state
+            callState = .onDialing
         }
     }
     
     func accept() {
+        /// 1. create `CallOptions` object
         let callOptions = CallOptions(
             isAudioEnabled: true,
             isVideoEnabled: false,
@@ -60,16 +65,20 @@ class DirectCallViewModel: ObservableObject {
             remoteVideoView: nil,
             useFrontCamera: true
         )
+        /// 2. create `AcceptParams` with call options
         let acceptParams = AcceptParams(callOptions: callOptions)
         
+        /// 3. accept incoming call with accept params
         call?.accept(with: acceptParams)
     }
     
     func end() {
+        /// 1. end call
         call?.end()
     }
 }
 
+/// To update call state
 extension DirectCallViewModel: DirectCallDelegate {
     func didConnect(_ call: DirectCall) {
         callState = .onConnected
@@ -77,6 +86,7 @@ extension DirectCallViewModel: DirectCallDelegate {
     
     func didEnd(_ call: DirectCall) {
         callState = .none
+        /// set `self.call` as nil
         self.call = nil
     }
 }

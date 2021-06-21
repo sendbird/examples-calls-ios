@@ -27,6 +27,18 @@ struct IncomingCallView: View {
         }
     }
     
+    // MARK: - Call interactions
+    func accept() {
+        viewModel.accept()
+    }
+    
+    func decline() {
+        viewModel.end()
+    }
+}
+
+// MARK: - Design
+extension IncomingCallView {
     var acceptStyleBody: some View {
         Color
             .green
@@ -47,15 +59,5 @@ struct IncomingCallView: View {
                 Image(systemName: "phone.down.fill")
                     .foregroundColor(.white)
             )
-    }
-    
-    func accept() {
-        viewModel.accept()
-        appState.reset()
-    }
-    
-    func decline() {
-        viewModel.end()
-        appState.reset()
     }
 }

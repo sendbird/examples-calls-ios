@@ -13,27 +13,26 @@ struct AuthenticationView: View {
     var body: some View {
         VStack {
             VStack {
+                /// App Icon
                 Image("icLogoSymbol")
                 
+                /// App title
                 Text("Sendbird Calls")
                     .font(.title2)
                     .bold()
                     .padding(.vertical, 32)
                 
-                TextField("Enter user ID", text: $viewModel.userID)
+                /// User ID
+                TextField("user ID", text: $viewModel.userID)
+                
+                /// Access token (Optional)
+                TextField("(Optional) access token", text: $viewModel.accessToken)
                 
                 Divider()
-                
-                HStack {
-                    Text(viewModel.error)
-                        .font(.caption2)
-                        .foregroundColor(.red)
-
-                    Spacer()
-                }
             }
             .padding()
             
+            /// Authentication button
             Button(action: viewModel.authenticate) {
                 authStyleBody
             }
@@ -43,6 +42,7 @@ struct AuthenticationView: View {
     }
 }
 
+// MARK: - Design
 extension AuthenticationView {
     var authStyleBody: some View {
         RoundedRectangle(cornerRadius: 4)
