@@ -22,7 +22,8 @@ class DirectCallLogListViewModel: ObservableObject {
         
         query = SendBirdCall.createDirectCallLogListQuery(with: params)
         
-        query?.next { [self] logs, error in
+        query?.next { [weak self] logs, error in
+            guard let self = self else { return }
             if let logs = logs {
                 self.logs.append(contentsOf: logs)
             }
