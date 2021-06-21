@@ -10,7 +10,6 @@ import SendBirdCalls
 
 class DirectCallLogListViewModel: ObservableObject {
     @Published var logs: [DirectCallLog] = []
-    @Published var error: String = ""
     
     private var query: DirectCallLogListQuery?
     
@@ -28,7 +27,7 @@ class DirectCallLogListViewModel: ObservableObject {
                 self.logs.append(contentsOf: logs)
             }
             if let error = error {
-                self.error = error.localizedDescription
+                print(error.localizedDescription)
             }
         }
     }

@@ -29,8 +29,10 @@ class AuthenticationViewModel: ObservableObject {
                 print(error.localizedDescription)
                 return
             }
-            /// 3. Dismiss AuthViewf
+            /// 3. Dismiss AuthView
             authRequired = false
+            
+            /// 4. Remote push token registration
             SendBirdCall.registerRemotePush(token: UserDefaults.standard.remotePushToken, completionHandler: nil)
         }
     }

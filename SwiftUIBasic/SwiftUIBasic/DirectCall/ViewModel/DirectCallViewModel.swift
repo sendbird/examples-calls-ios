@@ -80,8 +80,19 @@ class DirectCallViewModel: ObservableObject {
 
 /// To update call state
 extension DirectCallViewModel: DirectCallDelegate {
+    func didEstablish(_ call: DirectCall) {
+        callState = .onEstablished
+    }
     func didConnect(_ call: DirectCall) {
         callState = .onConnected
+    }
+    
+    func didStartReconnecting(_ call: DirectCall) {
+        callState = .onReconnecting
+    }
+    
+    func didReconnect(_ call: DirectCall) {
+        callState = .onReconnected
     }
     
     func didEnd(_ call: DirectCall) {
