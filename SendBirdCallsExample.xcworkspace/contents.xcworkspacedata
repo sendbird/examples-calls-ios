@@ -35,6 +35,9 @@
       location = "group:AutoAnswer/AutoAnswer.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SwiftUIBasic/SwiftUIBasic.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
