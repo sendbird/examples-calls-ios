@@ -60,3 +60,6 @@ Examples in this repository use basic Remote Notifications to receive an incomin
 
 ### [Auto Answer Example](https://github.com/sendbird/examples-calls-ios/tree/main/AutoAnswer)
 `AutoAnswer` project contains implementation of automatically handling incoming Direct Calls.
+
+### [Hold And Resume Example](https://github.com/sendbird/examples-calls-ios/tree/main/HoldAndResume)
+`HoldAndResume` project contains implementation of holding and resuming multiple Direct Calls.

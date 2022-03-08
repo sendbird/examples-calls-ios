@@ -1,7 +1,7 @@
 PODS:
-  - SendBirdCalls (1.4.0):
-    - SendBirdWebRTC
-  - SendBirdWebRTC (1.2.0)
+  - SendBirdCalls (1.8.0):
+    - SendBirdWebRTC (~> 1.4.0)
+  - SendBirdWebRTC (1.4.0)
 
 DEPENDENCIES:
   - SendBirdCalls
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SendBirdWebRTC
 
 SPEC CHECKSUMS:
-  SendBirdCalls: 28188cf95e5233277ff87ceb7efa7b1cbdf7fe14
-  SendBirdWebRTC: 7ba91b10a214ae2f1d99de28b9a70bd68d897511
+  SendBirdCalls: 077ae73f002aa1408fe35d7580b45ed544060a65
+  SendBirdWebRTC: 385bf08aea051ea4c065303cddbfbe34eca36232
 
-PODFILE CHECKSUM: 6e7a7ce94638a1d696f4486ec3fee98b8cfb0a59
+PODFILE CHECKSUM: aff95ca205fae2c69952d9d364f308b89171b43b
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.2
