@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: examples-calls-ios
+  descritpion: Feature-specific iOS Samples for Sendbird Calls
+spec:
+  type: sample
+  lifecycle: production
+  owner: dep-client-platform
+  system: sendbird-calls
+
